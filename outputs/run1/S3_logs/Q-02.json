@@ -1,0 +1,116 @@
+{
+  "texts": [
+    "Harrowfield grew faster: 7.8975% versus Tarnvale’s 6.2100%, a difference of 1.6875 percentage points.\n\nANSWER: Harrowfield | 1.6875"
+  ],
+  "parsed": [
+    "Harrowfield",
+    1.6875
+  ],
+  "in": 2379,
+  "out": 227,
+  "calls": 3,
+  "rounds": 3,
+  "hit_limit": false,
+  "tool_calls": 6,
+  "log": [
+    {
+      "round": 1,
+      "prompt_tokens": 532,
+      "completion_tokens": 107,
+      "tool_calls": [
+        {
+          "id": "call_5dNqyV3HEYhRAxItOAxjv9fa",
+          "tool": "lookup",
+          "arguments": "{\"district\": \"Tarnvale\", \"field\": \"population_2020\"}",
+          "result": {
+            "district": "Tarnvale",
+            "field": "population_2020",
+            "value": 67214.0,
+            "unit": "residents",
+            "source": "NR-03",
+            "note": "archived profile NR-13 (2019) ignored"
+          },
+          "seconds": 0.00063
+        },
+        {
+          "id": "call_6le2XsfODGpa4xWsP040Lpqh",
+          "tool": "lookup",
+          "arguments": "{\"district\": \"Tarnvale\", \"field\": \"population_2025\"}",
+          "result": {
+            "district": "Tarnvale",
+            "field": "population_2025",
+            "value": 71388.0,
+            "unit": "residents",
+            "source": "NR-03",
+            "note": "archived profile NR-13 (2019) ignored"
+          },
+          "seconds": 4e-05
+        },
+        {
+          "id": "call_RdJDQx7XbedN6uzCsiwdcIX2",
+          "tool": "lookup",
+          "arguments": "{\"district\": \"Harrowfield\", \"field\": \"population_2020\"}",
+          "result": {
+            "district": "Harrowfield",
+            "field": "population_2020",
+            "value": 83609.0,
+            "unit": "residents",
+            "source": "NR-07"
+          },
+          "seconds": 3e-05
+        },
+        {
+          "id": "call_FgQJU07XqQUmKrdu54rZiPkZ",
+          "tool": "lookup",
+          "arguments": "{\"district\": \"Harrowfield\", \"field\": \"population_2025\"}",
+          "result": {
+            "district": "Harrowfield",
+            "field": "population_2025",
+            "value": 90212.0,
+            "unit": "residents",
+            "source": "NR-07"
+          },
+          "seconds": 2e-05
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "prompt_tokens": 850,
+      "completion_tokens": 73,
+      "tool_calls": [
+        {
+          "id": "call_knXffJO1p9KWooDZ9lDPPeBd",
+          "tool": "calculate",
+          "arguments": "{\"expression\": \"(71388 - 67214) / 67214 * 100\"}",
+          "result": {
+            "expression": "(71388 - 67214) / 67214 * 100",
+            "result": 6.2100157705
+          },
+          "seconds": 0.00028
+        },
+        {
+          "id": "call_IxXnv3fgkgQyPYNPSvkEYi44",
+          "tool": "calculate",
+          "arguments": "{\"expression\": \"(90212 - 83609) / 83609 * 100\"}",
+          "result": {
+            "expression": "(90212 - 83609) / 83609 * 100",
+            "result": 7.8974751522
+          },
+          "seconds": 0.0001
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "prompt_tokens": 997,
+      "completion_tokens": 47,
+      "final": "Harrowfield grew faster: 7.8975% versus Tarnvale’s 6.2100%, a difference of 1.6875 percentage points.\n\nANSWER: Harrowfield | 1.6875"
+    }
+  ],
+  "seconds": 5.16,
+  "id": "Q-02",
+  "correct": true,
+  "unanswered": false,
+  "expected": "Harrowfield | 1.69"
+}

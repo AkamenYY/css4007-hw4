@@ -1,0 +1,1 @@
+prompt_tokens with tools = 385, without = 9, tools add 376

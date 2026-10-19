@@ -1,0 +1,106 @@
+{
+  "texts": [
+    "Tarnvale is higher by 64.39 thousand tenge per pupil.\n\nANSWER: Tarnvale | 64.39"
+  ],
+  "parsed": [
+    "Tarnvale",
+    64.39
+  ],
+  "in": 2359,
+  "out": 186,
+  "calls": 3,
+  "rounds": 3,
+  "hit_limit": false,
+  "tool_calls": 5,
+  "log": [
+    {
+      "round": 1,
+      "prompt_tokens": 529,
+      "completion_tokens": 115,
+      "tool_calls": [
+        {
+          "id": "call_KYrhOjLmqV0cmdeNzgraDqos",
+          "tool": "lookup",
+          "arguments": "{\"district\": \"Harrowfield\", \"field\": \"budget_2025\"}",
+          "result": {
+            "district": "Harrowfield",
+            "field": "budget_2025",
+            "value": 16021.7,
+            "unit": "million tenge",
+            "source": "NR-07"
+          },
+          "seconds": 0.00013
+        },
+        {
+          "id": "call_YbxrFPRIYW2onTCOEh564spX",
+          "tool": "lookup",
+          "arguments": "{\"district\": \"Harrowfield\", \"field\": \"pupils_2025_26\"}",
+          "result": {
+            "district": "Harrowfield",
+            "field": "pupils_2025_26",
+            "value": 13904.0,
+            "unit": "pupils",
+            "source": "NR-07"
+          },
+          "seconds": 7e-05
+        },
+        {
+          "id": "call_ToiZQN7U1WQkLkbijQlNz6dB",
+          "tool": "lookup",
+          "arguments": "{\"district\": \"Tarnvale\", \"field\": \"budget_2025\"}",
+          "result": {
+            "district": "Tarnvale",
+            "field": "budget_2025",
+            "value": 12960.3,
+            "unit": "million tenge",
+            "source": "NR-03",
+            "note": "archived profile NR-13 (2019) ignored"
+          },
+          "seconds": 9e-05
+        },
+        {
+          "id": "call_cmzMMVn6UyIViCmkdkoGvwEr",
+          "tool": "lookup",
+          "arguments": "{\"district\": \"Tarnvale\", \"field\": \"pupils_2025_26\"}",
+          "result": {
+            "district": "Tarnvale",
+            "field": "pupils_2025_26",
+            "value": 10652.0,
+            "unit": "pupils",
+            "source": "NR-03",
+            "note": "archived profile NR-13 (2019) ignored"
+          },
+          "seconds": 5e-05
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "prompt_tokens": 867,
+      "completion_tokens": 43,
+      "tool_calls": [
+        {
+          "id": "call_QXzE4eN4LyefxJOzh25wfAGE",
+          "tool": "calculate",
+          "arguments": "{\"expression\":\"(16021.7*1000000/13904 - 12960.3*1000000/10652)/1000\"}",
+          "result": {
+            "expression": "(16021.7*1000000/13904 - 12960.3*1000000/10652)/1000",
+            "result": -64.3924008501
+          },
+          "seconds": 0.00029
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "prompt_tokens": 963,
+      "completion_tokens": 28,
+      "final": "Tarnvale is higher by 64.39 thousand tenge per pupil.\n\nANSWER: Tarnvale | 64.39"
+    }
+  ],
+  "seconds": 4.86,
+  "id": "Q-12",
+  "correct": true,
+  "unanswered": false,
+  "expected": "Tarnvale | 64.4"
+}

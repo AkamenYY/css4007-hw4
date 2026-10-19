@@ -1,0 +1,24 @@
+============================= test session starts ==============================
+platform darwin -- Python 3.9.6, pytest-8.4.2, pluggy-1.6.0 -- /Users/akameny/Documents/css4007-hw4/.venv/bin/python
+cachedir: .pytest_cache
+rootdir: /Users/akameny/Documents/css4007-hw4
+plugins: anyio-4.12.1
+collecting ... collected 15 items
+
+tests/test_tools.py::test_lookup_finds_2025_population PASSED            [  6%]
+tests/test_tools.py::test_lookup_misspelled_name_suggests PASSED         [ 13%]
+tests/test_tools.py::test_lookup_similar_names_are_kept_apart PASSED     [ 20%]
+tests/test_tools.py::test_lookup_ignores_archived_profile PASSED         [ 26%]
+tests/test_tools.py::test_lookup_applies_correction PASSED               [ 33%]
+tests/test_tools.py::test_lookup_converts_cubic_metres PASSED            [ 40%]
+tests/test_tools.py::test_lookup_unknown_field PASSED                    [ 46%]
+tests/test_tools.py::test_lookup_tariff PASSED                           [ 53%]
+tests/test_tools.py::test_calculate_multiplication PASSED                [ 60%]
+tests/test_tools.py::test_calculate_density PASSED                       [ 66%]
+tests/test_tools.py::test_calculate_refuses_import PASSED                [ 73%]
+tests/test_tools.py::test_calculate_refuses_attribute PASSED             [ 80%]
+tests/test_tools.py::test_calculate_refuses_huge_power_quickly PASSED    [ 86%]
+tests/test_tools.py::test_calculate_division_by_zero PASSED              [ 93%]
+tests/test_tools.py::test_calculate_garbage PASSED                       [100%]
+
+============================== 15 passed in 0.02s ==============================

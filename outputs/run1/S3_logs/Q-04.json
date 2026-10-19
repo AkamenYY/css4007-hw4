@@ -1,0 +1,104 @@
+{
+  "texts": [
+    "Millbrook has more pupils per school. The difference is 2.5917 pupils per school.\n\nANSWER: Millbrook | 2.5917"
+  ],
+  "parsed": [
+    "Millbrook",
+    2.5917
+  ],
+  "in": 2214,
+  "out": 167,
+  "calls": 3,
+  "rounds": 3,
+  "hit_limit": false,
+  "tool_calls": 5,
+  "log": [
+    {
+      "round": 1,
+      "prompt_tokens": 527,
+      "completion_tokens": 107,
+      "tool_calls": [
+        {
+          "id": "call_0L4oGIAAnNlBVmmkx1n9lQuw",
+          "tool": "lookup",
+          "arguments": "{\"district\": \"Ashgrove\", \"field\": \"pupils_2025_26\"}",
+          "result": {
+            "district": "Ashgrove",
+            "field": "pupils_2025_26",
+            "value": 8837.0,
+            "unit": "pupils",
+            "source": "NR-10"
+          },
+          "seconds": 0.00035
+        },
+        {
+          "id": "call_zilt76GrCFdXsbzZJuzb6VRG",
+          "tool": "lookup",
+          "arguments": "{\"district\": \"Ashgrove\", \"field\": \"schools\"}",
+          "result": {
+            "district": "Ashgrove",
+            "field": "schools",
+            "value": 24.0,
+            "unit": "schools",
+            "source": "NR-10"
+          },
+          "seconds": 0.00022
+        },
+        {
+          "id": "call_tmvbnxLCyySVvdOXHlwb2CdR",
+          "tool": "lookup",
+          "arguments": "{\"district\": \"Millbrook\", \"field\": \"pupils_2025_26\"}",
+          "result": {
+            "district": "Millbrook",
+            "field": "pupils_2025_26",
+            "value": 5562.0,
+            "unit": "pupils",
+            "source": "NR-11"
+          },
+          "seconds": 5e-05
+        },
+        {
+          "id": "call_X5APLsb10GZdKH7W4kovk7Hn",
+          "tool": "lookup",
+          "arguments": "{\"district\": \"Millbrook\", \"field\": \"schools\"}",
+          "result": {
+            "district": "Millbrook",
+            "field": "schools",
+            "value": 15.0,
+            "unit": "schools",
+            "source": "NR-11"
+          },
+          "seconds": 3e-05
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "prompt_tokens": 811,
+      "completion_tokens": 27,
+      "tool_calls": [
+        {
+          "id": "call_aDiQJRjyOrKPEEn3GZla8Sn8",
+          "tool": "calculate",
+          "arguments": "{\"expression\":\"8837 / 24 - 5562 / 15\"}",
+          "result": {
+            "expression": "8837 / 24 - 5562 / 15",
+            "result": -2.5916666667
+          },
+          "seconds": 0.00033
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "prompt_tokens": 876,
+      "completion_tokens": 33,
+      "final": "Millbrook has more pupils per school. The difference is 2.5917 pupils per school.\n\nANSWER: Millbrook | 2.5917"
+    }
+  ],
+  "seconds": 4.91,
+  "id": "Q-04",
+  "correct": true,
+  "unanswered": false,
+  "expected": "Millbrook | 2.59"
+}

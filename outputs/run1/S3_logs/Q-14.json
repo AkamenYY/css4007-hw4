@@ -1,0 +1,106 @@
+{
+  "texts": [
+    "Ashgrove used more water, by 4.853 litres per resident per day.\n\nANSWER: Ashgrove | 4.853"
+  ],
+  "parsed": [
+    "Ashgrove",
+    4.853
+  ],
+  "in": 2328,
+  "out": 177,
+  "calls": 3,
+  "rounds": 3,
+  "hit_limit": false,
+  "tool_calls": 5,
+  "log": [
+    {
+      "round": 1,
+      "prompt_tokens": 532,
+      "completion_tokens": 107,
+      "tool_calls": [
+        {
+          "id": "call_Qs7OOSkuSGzNLiEPYwi1N5jz",
+          "tool": "lookup",
+          "arguments": "{\"district\": \"Tarnvale\", \"field\": \"water_2025\"}",
+          "result": {
+            "district": "Tarnvale",
+            "field": "water_2025",
+            "value": 5207.0,
+            "unit": "megalitres",
+            "source": "NR-03",
+            "note": "archived profile NR-13 (2019) ignored"
+          },
+          "seconds": 0.00023
+        },
+        {
+          "id": "call_sRxqc618NJsXgjh3xZnmoCbw",
+          "tool": "lookup",
+          "arguments": "{\"district\": \"Tarnvale\", \"field\": \"population_2025\"}",
+          "result": {
+            "district": "Tarnvale",
+            "field": "population_2025",
+            "value": 71388.0,
+            "unit": "residents",
+            "source": "NR-03",
+            "note": "archived profile NR-13 (2019) ignored"
+          },
+          "seconds": 5e-05
+        },
+        {
+          "id": "call_Uj4Bst6BuNf7YE71d5ZQxxBT",
+          "tool": "lookup",
+          "arguments": "{\"district\": \"Ashgrove\", \"field\": \"water_2025\"}",
+          "result": {
+            "district": "Ashgrove",
+            "field": "water_2025",
+            "value": 4390.0,
+            "unit": "megalitres",
+            "source": "NR-10"
+          },
+          "seconds": 4e-05
+        },
+        {
+          "id": "call_aMTdCNNK4A6Sf7OY3fSuPrE9",
+          "tool": "lookup",
+          "arguments": "{\"district\": \"Ashgrove\", \"field\": \"population_2025\"}",
+          "result": {
+            "district": "Ashgrove",
+            "field": "population_2025",
+            "value": 58760.0,
+            "unit": "residents",
+            "source": "NR-10"
+          },
+          "seconds": 3e-05
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "prompt_tokens": 854,
+      "completion_tokens": 39,
+      "tool_calls": [
+        {
+          "id": "call_YiYE8XizVQmwYgld4ynzh8MK",
+          "tool": "calculate",
+          "arguments": "{\"expression\":\"5207*1000000/(71388*365)-4390*1000000/(58760*365)\"}",
+          "result": {
+            "expression": "5207*1000000/(71388*365)-4390*1000000/(58760*365)",
+            "result": -4.8527614974
+          },
+          "seconds": 0.00022
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "prompt_tokens": 942,
+      "completion_tokens": 31,
+      "final": "Ashgrove used more water, by 4.853 litres per resident per day.\n\nANSWER: Ashgrove | 4.853"
+    }
+  ],
+  "seconds": 4.97,
+  "id": "Q-14",
+  "correct": true,
+  "unanswered": false,
+  "expected": "Ashgrove | 4.9"
+}

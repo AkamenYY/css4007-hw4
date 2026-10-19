@@ -1,0 +1,342 @@
+[
+  {
+    "texts": [
+      "ANSWER: Ossbridge | 4.424"
+    ],
+    "parsed": [
+      "Ossbridge",
+      4.424
+    ],
+    "in": 2214,
+    "out": 12,
+    "calls": 1,
+    "seconds": 2.99,
+    "id": "Q-01",
+    "correct": false,
+    "unanswered": false,
+    "expected": "Ossbridge | 4.6"
+  },
+  {
+    "texts": [
+      "ANSWER: Tarnvale | 0.7386"
+    ],
+    "parsed": [
+      "Tarnvale",
+      0.7386
+    ],
+    "in": 2220,
+    "out": 13,
+    "calls": 1,
+    "seconds": 2.25,
+    "id": "Q-02",
+    "correct": false,
+    "unanswered": false,
+    "expected": "Harrowfield | 1.69"
+  },
+  {
+    "texts": [
+      "ANSWER: Lindenmoor | 0.06392"
+    ],
+    "parsed": [
+      "Lindenmoor",
+      0.06392
+    ],
+    "in": 2220,
+    "out": 13,
+    "calls": 1,
+    "seconds": 1.98,
+    "id": "Q-03",
+    "correct": false,
+    "unanswered": false,
+    "expected": "Lindenmoor | 5.3"
+  },
+  {
+    "texts": [
+      "ANSWER: Ashgrove | 6.0640625"
+    ],
+    "parsed": [
+      "Ashgrove",
+      6.0640625
+    ],
+    "in": 2215,
+    "out": 15,
+    "calls": 1,
+    "seconds": 1.93,
+    "id": "Q-04",
+    "correct": false,
+    "unanswered": false,
+    "expected": "Millbrook | 2.59"
+  },
+  {
+    "texts": [
+      "ANSWER: Stonecairn | 220.4"
+    ],
+    "parsed": [
+      "Stonecairn",
+      220.4
+    ],
+    "in": 2216,
+    "out": 14,
+    "calls": 1,
+    "seconds": 2.31,
+    "id": "Q-05",
+    "correct": false,
+    "unanswered": false,
+    "expected": "Coldharbour | 14235"
+  },
+  {
+    "texts": [
+      "ANSWER: yes | 1417"
+    ],
+    "parsed": [
+      "yes",
+      1417.0
+    ],
+    "in": 2220,
+    "out": 10,
+    "calls": 1,
+    "seconds": 1.43,
+    "id": "Q-06",
+    "correct": false,
+    "unanswered": false,
+    "expected": "yes | 14069"
+  },
+  {
+    "texts": [
+      "ANSWER: Coldharbour | 20.92"
+    ],
+    "parsed": [
+      "Coldharbour",
+      20.92
+    ],
+    "in": 2224,
+    "out": 13,
+    "calls": 1,
+    "seconds": 1.23,
+    "id": "Q-07",
+    "correct": false,
+    "unanswered": false,
+    "expected": "Coldharbour | 18.5"
+  },
+  {
+    "texts": [
+      "ANSWER: Brightwater | 72.36225"
+    ],
+    "parsed": [
+      "Brightwater",
+      72.36225
+    ],
+    "in": 2222,
+    "out": 13,
+    "calls": 1,
+    "seconds": 1.76,
+    "id": "Q-08",
+    "correct": false,
+    "unanswered": false,
+    "expected": "Brightwater | 72.46"
+  },
+  {
+    "texts": [
+      "ANSWER: Brightwater | 10.12"
+    ],
+    "parsed": [
+      "Brightwater",
+      10.12
+    ],
+    "in": 2214,
+    "out": 12,
+    "calls": 1,
+    "seconds": 2.0,
+    "id": "Q-09",
+    "correct": false,
+    "unanswered": false,
+    "expected": "Millbrook | 0.6"
+  },
+  {
+    "texts": [
+      "ANSWER: Stonecairn | 8"
+    ],
+    "parsed": [
+      "Stonecairn",
+      8.0
+    ],
+    "in": 2211,
+    "out": 12,
+    "calls": 1,
+    "seconds": 1.25,
+    "id": "Q-10",
+    "correct": true,
+    "unanswered": false,
+    "expected": "Stonecairn | 8"
+  },
+  {
+    "texts": [
+      "ANSWER: Ashgrove | 139.4"
+    ],
+    "parsed": [
+      "Ashgrove",
+      139.4
+    ],
+    "in": 2229,
+    "out": 13,
+    "calls": 1,
+    "seconds": 1.43,
+    "id": "Q-11",
+    "correct": false,
+    "unanswered": false,
+    "expected": "Redfen | 56.1"
+  },
+  {
+    "texts": [
+      "ANSWER: Harrowfield | 0.4239"
+    ],
+    "parsed": [
+      "Harrowfield",
+      0.4239
+    ],
+    "in": 2217,
+    "out": 14,
+    "calls": 1,
+    "seconds": 1.32,
+    "id": "Q-12",
+    "correct": false,
+    "unanswered": false,
+    "expected": "Tarnvale | 64.4"
+  },
+  {
+    "texts": [
+      "ANSWER: Coldharbour | 4.159%\n"
+    ],
+    "parsed": [
+      "Coldharbour",
+      4.159
+    ],
+    "in": 2225,
+    "out": 14,
+    "calls": 1,
+    "seconds": 1.08,
+    "id": "Q-13",
+    "correct": true,
+    "unanswered": false,
+    "expected": "Coldharbour | 4.16"
+  },
+  {
+    "texts": [
+      "ANSWER: Tarnvale | 0.001150 \n"
+    ],
+    "parsed": [
+      "Tarnvale",
+      0.00115
+    ],
+    "in": 2220,
+    "out": 14,
+    "calls": 1,
+    "seconds": 1.95,
+    "id": "Q-14",
+    "correct": false,
+    "unanswered": false,
+    "expected": "Ashgrove | 4.9"
+  },
+  {
+    "texts": [
+      "ANSWER: Kelmarsh | 16.5636"
+    ],
+    "parsed": [
+      "Kelmarsh",
+      16.5636
+    ],
+    "in": 2215,
+    "out": 14,
+    "calls": 1,
+    "seconds": 1.43,
+    "id": "Q-15",
+    "correct": false,
+    "unanswered": false,
+    "expected": "Redfen | 17.61"
+  },
+  {
+    "texts": [
+      "ANSWER: yes | 23.9"
+    ],
+    "parsed": [
+      "yes",
+      23.9
+    ],
+    "in": 2214,
+    "out": 11,
+    "calls": 1,
+    "seconds": 1.01,
+    "id": "Q-16",
+    "correct": true,
+    "unanswered": false,
+    "expected": "yes | 23.9"
+  },
+  {
+    "texts": [
+      "ANSWER: Harrowfield | 3327.11"
+    ],
+    "parsed": [
+      "Harrowfield",
+      3327.11
+    ],
+    "in": 2226,
+    "out": 14,
+    "calls": 1,
+    "seconds": 1.24,
+    "id": "Q-17",
+    "correct": false,
+    "unanswered": false,
+    "expected": "Harrowfield | 884"
+  },
+  {
+    "texts": [
+      "ANSWER: yes | 39999.43"
+    ],
+    "parsed": [
+      "yes",
+      39999.43
+    ],
+    "in": 2237,
+    "out": 12,
+    "calls": 1,
+    "seconds": 1.28,
+    "id": "Q-18",
+    "correct": false,
+    "unanswered": false,
+    "expected": "yes | 40013"
+  },
+  {
+    "texts": [
+      "ANSWER: Redfen | 0.07231"
+    ],
+    "parsed": [
+      "Redfen",
+      0.07231
+    ],
+    "in": 2214,
+    "out": 13,
+    "calls": 1,
+    "seconds": 1.29,
+    "id": "Q-19",
+    "correct": false,
+    "unanswered": false,
+    "expected": "Lindenmoor | 0.035"
+  },
+  {
+    "texts": [
+      "ANSWER: Harrowfield | 74088.91"
+    ],
+    "parsed": [
+      "Harrowfield",
+      74088.91
+    ],
+    "in": 2227,
+    "out": 14,
+    "calls": 1,
+    "seconds": 2.08,
+    "id": "Q-20",
+    "correct": false,
+    "unanswered": false,
+    "expected": "Ashgrove | 2993"
+  }
+]

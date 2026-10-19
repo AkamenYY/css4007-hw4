@@ -1,0 +1,78 @@
+{
+  "texts": [
+    "Stonecairn is older by 8 years.\n\nANSWER: Stonecairn | 8"
+  ],
+  "parsed": [
+    "Stonecairn",
+    8.0
+  ],
+  "in": 1921,
+  "out": 103,
+  "calls": 3,
+  "rounds": 3,
+  "hit_limit": false,
+  "tool_calls": 3,
+  "log": [
+    {
+      "round": 1,
+      "prompt_tokens": 523,
+      "completion_tokens": 60,
+      "tool_calls": [
+        {
+          "id": "call_9dpuLgcUgrzMcOKeYHAtXCjQ",
+          "tool": "lookup",
+          "arguments": "{\"district\": \"Stonecairn\", \"field\": \"founded\"}",
+          "result": {
+            "district": "Stonecairn",
+            "field": "founded",
+            "value": 1837.0,
+            "unit": "year",
+            "source": "NR-06"
+          },
+          "seconds": 0.00035
+        },
+        {
+          "id": "call_m8c3e7SbmvXRoxhxDJmSVrpc",
+          "tool": "lookup",
+          "arguments": "{\"district\": \"Coldharbour\", \"field\": \"founded\"}",
+          "result": {
+            "district": "Coldharbour",
+            "field": "founded",
+            "value": 1845.0,
+            "unit": "year",
+            "source": "NR-12"
+          },
+          "seconds": 4e-05
+        }
+      ]
+    },
+    {
+      "round": 2,
+      "prompt_tokens": 675,
+      "completion_tokens": 20,
+      "tool_calls": [
+        {
+          "id": "call_E7LsZdy4YjYfbZusg96CVPx5",
+          "tool": "calculate",
+          "arguments": "{\"expression\":\"1845-1837\"}",
+          "result": {
+            "expression": "1845-1837",
+            "result": 8.0
+          },
+          "seconds": 0.0002
+        }
+      ]
+    },
+    {
+      "round": 3,
+      "prompt_tokens": 723,
+      "completion_tokens": 23,
+      "final": "Stonecairn is older by 8 years.\n\nANSWER: Stonecairn | 8"
+    }
+  ],
+  "seconds": 4.63,
+  "id": "Q-10",
+  "correct": true,
+  "unanswered": false,
+  "expected": "Stonecairn | 8"
+}

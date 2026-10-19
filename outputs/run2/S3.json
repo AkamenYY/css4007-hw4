@@ -1,0 +1,2342 @@
+[
+  {
+    "texts": [
+      "Ossbridge has the higher 2025 population density, by 4.570 residents per square kilometre.\n\nANSWER: Ossbridge | 4.5701538723"
+    ],
+    "parsed": [
+      "Ossbridge",
+      4.5701538723
+    ],
+    "in": 4126,
+    "out": 222,
+    "calls": 5,
+    "rounds": 5,
+    "hit_limit": false,
+    "tool_calls": 7,
+    "log": [
+      {
+        "round": 1,
+        "prompt_tokens": 526,
+        "completion_tokens": 107,
+        "tool_calls": [
+          {
+            "id": "call_PgHs2FXNxut4rtUR3uqweB16",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Ossbridge\", \"field\": \"population_2025\"}",
+            "result": {
+              "district": "Ossbridge",
+              "field": "population_2025",
+              "value": 52904.0,
+              "unit": "residents",
+              "source": "NR-01"
+            },
+            "seconds": 0.00059
+          },
+          {
+            "id": "call_1vJHQCMYsdFHzU5A5sMG2en7",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Ossbridge\", \"field\": \"area_km2\"}",
+            "result": {
+              "district": "Ossbridge",
+              "field": "area_km2",
+              "value": 1284.6,
+              "unit": "km2",
+              "source": "NR-01"
+            },
+            "seconds": 0.00029
+          },
+          {
+            "id": "call_x8EE6ifXDUq5UooEiBKBsBG5",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Ossford\", \"field\": \"population_2025\"}",
+            "result": {
+              "district": "Ossford",
+              "field": "population_2025",
+              "value": 30982.0,
+              "unit": "residents",
+              "source": "NR-02"
+            },
+            "seconds": 0.00039
+          },
+          {
+            "id": "call_zCbLiii0eLqqMWjeeyH03wGq",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Ossford\", \"field\": \"area_km2\"}",
+            "result": {
+              "district": "Ossford",
+              "field": "area_km2",
+              "value": 846.2,
+              "unit": "km2",
+              "source": "NR-02"
+            },
+            "seconds": 5e-05
+          }
+        ]
+      },
+      {
+        "round": 2,
+        "prompt_tokens": 811,
+        "completion_tokens": 23,
+        "tool_calls": [
+          {
+            "id": "call_W8aeABseivcNMQYa8vojTjMd",
+            "tool": "calculate",
+            "arguments": "{\"expression\":\"52904 / 1284.6\"}",
+            "result": {
+              "expression": "52904 / 1284.6",
+              "result": 41.1832477036
+            },
+            "seconds": 0.00057
+          }
+        ]
+      },
+      {
+        "round": 3,
+        "prompt_tokens": 868,
+        "completion_tokens": 22,
+        "tool_calls": [
+          {
+            "id": "call_rwC9a4vzAOn0m3NusIbZBhMb",
+            "tool": "calculate",
+            "arguments": "{\"expression\":\"30982 / 846.2\"}",
+            "result": {
+              "expression": "30982 / 846.2",
+              "result": 36.6130938312
+            },
+            "seconds": 0.00021
+          }
+        ]
+      },
+      {
+        "round": 4,
+        "prompt_tokens": 923,
+        "completion_tokens": 32,
+        "tool_calls": [
+          {
+            "id": "call_7dT0bpnFXJZKQN0cMgntUVJC",
+            "tool": "calculate",
+            "arguments": "{\"expression\":\"52904 / 1284.6 - 30982 / 846.2\"}",
+            "result": {
+              "expression": "52904 / 1284.6 - 30982 / 846.2",
+              "result": 4.5701538723
+            },
+            "seconds": 0.00023
+          }
+        ]
+      },
+      {
+        "round": 5,
+        "prompt_tokens": 998,
+        "completion_tokens": 38,
+        "final": "Ossbridge has the higher 2025 population density, by 4.570 residents per square kilometre.\n\nANSWER: Ossbridge | 4.5701538723"
+      }
+    ],
+    "seconds": 7.62,
+    "id": "Q-01",
+    "correct": true,
+    "unanswered": false,
+    "expected": "Ossbridge | 4.6"
+  },
+  {
+    "texts": [
+      "Harrowfield grew faster: 7.8975% versus Tarnvale’s 6.2100%, a difference of 1.6875 percentage points.\n\nANSWER: Harrowfield | 1.6875"
+    ],
+    "parsed": [
+      "Harrowfield",
+      1.6875
+    ],
+    "in": 3411,
+    "out": 247,
+    "calls": 4,
+    "rounds": 4,
+    "hit_limit": false,
+    "tool_calls": 7,
+    "log": [
+      {
+        "round": 1,
+        "prompt_tokens": 532,
+        "completion_tokens": 107,
+        "tool_calls": [
+          {
+            "id": "call_7Apn0DunWMa54d94pzYDn0mn",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Tarnvale\", \"field\": \"population_2020\"}",
+            "result": {
+              "district": "Tarnvale",
+              "field": "population_2020",
+              "value": 67214.0,
+              "unit": "residents",
+              "source": "NR-03",
+              "note": "archived profile NR-13 (2019) ignored"
+            },
+            "seconds": 0.00081
+          },
+          {
+            "id": "call_3okWhh3s1xDvsYDMtr2H4AeP",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Tarnvale\", \"field\": \"population_2025\"}",
+            "result": {
+              "district": "Tarnvale",
+              "field": "population_2025",
+              "value": 71388.0,
+              "unit": "residents",
+              "source": "NR-03",
+              "note": "archived profile NR-13 (2019) ignored"
+            },
+            "seconds": 4e-05
+          },
+          {
+            "id": "call_mXSU0naZp9hjEq65rDt64A1v",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Harrowfield\", \"field\": \"population_2020\"}",
+            "result": {
+              "district": "Harrowfield",
+              "field": "population_2020",
+              "value": 83609.0,
+              "unit": "residents",
+              "source": "NR-07"
+            },
+            "seconds": 3e-05
+          },
+          {
+            "id": "call_XYJSd4q0LaQojyPOneEyyB1L",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Harrowfield\", \"field\": \"population_2025\"}",
+            "result": {
+              "district": "Harrowfield",
+              "field": "population_2025",
+              "value": 90212.0,
+              "unit": "residents",
+              "source": "NR-07"
+            },
+            "seconds": 2e-05
+          }
+        ]
+      },
+      {
+        "round": 2,
+        "prompt_tokens": 850,
+        "completion_tokens": 65,
+        "tool_calls": [
+          {
+            "id": "call_NEXJlT9aHeIwUeOTny1XZUrU",
+            "tool": "calculate",
+            "arguments": "{\"expression\": \"(71388-67214)/67214*100\"}",
+            "result": {
+              "expression": "(71388-67214)/67214*100",
+              "result": 6.2100157705
+            },
+            "seconds": 0.0002
+          },
+          {
+            "id": "call_GSsxoT3DWgx0khRnD7MNE4bT",
+            "tool": "calculate",
+            "arguments": "{\"expression\": \"(90212-83609)/83609*100\"}",
+            "result": {
+              "expression": "(90212-83609)/83609*100",
+              "result": 7.8974751522
+            },
+            "seconds": 0.0001
+          }
+        ]
+      },
+      {
+        "round": 3,
+        "prompt_tokens": 981,
+        "completion_tokens": 28,
+        "tool_calls": [
+          {
+            "id": "call_ulnFUj5bMh1muCOSe0IVExZE",
+            "tool": "calculate",
+            "arguments": "{\"expression\":\"7.8974751522-6.2100157705\"}",
+            "result": {
+              "expression": "7.8974751522-6.2100157705",
+              "result": 1.6874593817
+            },
+            "seconds": 0.00023
+          }
+        ]
+      },
+      {
+        "round": 4,
+        "prompt_tokens": 1048,
+        "completion_tokens": 47,
+        "final": "Harrowfield grew faster: 7.8975% versus Tarnvale’s 6.2100%, a difference of 1.6875 percentage points.\n\nANSWER: Harrowfield | 1.6875"
+      }
+    ],
+    "seconds": 6.28,
+    "id": "Q-02",
+    "correct": true,
+    "unanswered": false,
+    "expected": "Harrowfield | 1.69"
+  },
+  {
+    "texts": [
+      "Lindenmoor used more water: 5.340 litres per resident per day more than Kelmarsh.\n\nANSWER: Lindenmoor | 5.340"
+    ],
+    "parsed": [
+      "Lindenmoor",
+      5.34
+    ],
+    "in": 2399,
+    "out": 183,
+    "calls": 3,
+    "rounds": 3,
+    "hit_limit": false,
+    "tool_calls": 5,
+    "log": [
+      {
+        "round": 1,
+        "prompt_tokens": 532,
+        "completion_tokens": 107,
+        "tool_calls": [
+          {
+            "id": "call_EGXYnuQdBiJAWcsQJCMcRlh4",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Lindenmoor\", \"field\": \"water_2025\"}",
+            "result": {
+              "district": "Lindenmoor",
+              "field": "water_2025",
+              "value": 2151.4,
+              "unit": "megalitres",
+              "source": "NR-08",
+              "note": "profile gives 2,151,400 cubic metres; converted to megalitres (1 ML = 1,000 m3)"
+            },
+            "seconds": 0.00108
+          },
+          {
+            "id": "call_tLLS8bw6W2aL9QuLzEsslYgD",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Lindenmoor\", \"field\": \"population_2025\"}",
+            "result": {
+              "district": "Lindenmoor",
+              "field": "population_2025",
+              "value": 29051.0,
+              "unit": "residents",
+              "source": "NR-08"
+            },
+            "seconds": 7e-05
+          },
+          {
+            "id": "call_TNoJV3qQmUb9MHzcH99USufa",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Kelmarsh\", \"field\": \"water_2025\"}",
+            "result": {
+              "district": "Kelmarsh",
+              "field": "water_2025",
+              "value": 1739.0,
+              "unit": "megalitres",
+              "source": "NR-04",
+              "note": "archived profile NR-14 (2019) ignored"
+            },
+            "seconds": 0.0001
+          },
+          {
+            "id": "call_50iVmOgvg41n1imGqir9alp1",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Kelmarsh\", \"field\": \"population_2025\"}",
+            "result": {
+              "district": "Kelmarsh",
+              "field": "population_2025",
+              "value": 24117.0,
+              "unit": "residents",
+              "source": "NR-04",
+              "note": "archived profile NR-14 (2019) ignored"
+            },
+            "seconds": 5e-05
+          }
+        ]
+      },
+      {
+        "round": 2,
+        "prompt_tokens": 887,
+        "completion_tokens": 42,
+        "tool_calls": [
+          {
+            "id": "call_DNv6n9aO1EroOSwBI8UfI6j9",
+            "tool": "calculate",
+            "arguments": "{\"expression\":\"(2151.4*1000000/29051/365)-(1739*1000000/24117/365)\"}",
+            "result": {
+              "expression": "(2151.4*1000000/29051/365)-(1739*1000000/24117/365)",
+              "result": 5.3401586651
+            },
+            "seconds": 0.0003
+          }
+        ]
+      },
+      {
+        "round": 3,
+        "prompt_tokens": 980,
+        "completion_tokens": 34,
+        "final": "Lindenmoor used more water: 5.340 litres per resident per day more than Kelmarsh.\n\nANSWER: Lindenmoor | 5.340"
+      }
+    ],
+    "seconds": 4.75,
+    "id": "Q-03",
+    "correct": true,
+    "unanswered": false,
+    "expected": "Lindenmoor | 5.3"
+  },
+  {
+    "texts": [
+      "Millbrook has more pupils per school: 370.8 versus Ashgrove’s 368.2083, a difference of 2.5917 pupils per school.\n\nANSWER: Millbrook | 2.592"
+    ],
+    "parsed": [
+      "Millbrook",
+      2.592
+    ],
+    "in": 3235,
+    "out": 233,
+    "calls": 4,
+    "rounds": 4,
+    "hit_limit": false,
+    "tool_calls": 7,
+    "log": [
+      {
+        "round": 1,
+        "prompt_tokens": 527,
+        "completion_tokens": 107,
+        "tool_calls": [
+          {
+            "id": "call_KUXhOHV9J5j0dQiux0CkbG7Y",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Ashgrove\", \"field\": \"pupils_2025_26\"}",
+            "result": {
+              "district": "Ashgrove",
+              "field": "pupils_2025_26",
+              "value": 8837.0,
+              "unit": "pupils",
+              "source": "NR-10"
+            },
+            "seconds": 0.00046
+          },
+          {
+            "id": "call_sH51r4oe5GYPNN8DNcdh0qXt",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Ashgrove\", \"field\": \"schools\"}",
+            "result": {
+              "district": "Ashgrove",
+              "field": "schools",
+              "value": 24.0,
+              "unit": "schools",
+              "source": "NR-10"
+            },
+            "seconds": 0.00023
+          },
+          {
+            "id": "call_NUWSCkqJDS97Gn9j8BcMfzF8",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Millbrook\", \"field\": \"pupils_2025_26\"}",
+            "result": {
+              "district": "Millbrook",
+              "field": "pupils_2025_26",
+              "value": 5562.0,
+              "unit": "pupils",
+              "source": "NR-11"
+            },
+            "seconds": 4e-05
+          },
+          {
+            "id": "call_COr85ZT9LdSGBpSq23wsKpA5",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Millbrook\", \"field\": \"schools\"}",
+            "result": {
+              "district": "Millbrook",
+              "field": "schools",
+              "value": 15.0,
+              "unit": "schools",
+              "source": "NR-11"
+            },
+            "seconds": 3e-05
+          }
+        ]
+      },
+      {
+        "round": 2,
+        "prompt_tokens": 811,
+        "completion_tokens": 53,
+        "tool_calls": [
+          {
+            "id": "call_VflvvXkMbazwsnIGxLcxT2WA",
+            "tool": "calculate",
+            "arguments": "{\"expression\": \"8837 / 24\"}",
+            "result": {
+              "expression": "8837 / 24",
+              "result": 368.2083333333
+            },
+            "seconds": 0.00019
+          },
+          {
+            "id": "call_nkzaMg7QAljJzqINROg0NAdI",
+            "tool": "calculate",
+            "arguments": "{\"expression\": \"5562 / 15\"}",
+            "result": {
+              "expression": "5562 / 15",
+              "result": 370.8
+            },
+            "seconds": 5e-05
+          }
+        ]
+      },
+      {
+        "round": 3,
+        "prompt_tokens": 917,
+        "completion_tokens": 26,
+        "tool_calls": [
+          {
+            "id": "call_KY08QnvCzqmfn45utJHeBpRt",
+            "tool": "calculate",
+            "arguments": "{\"expression\":\"370.8 - 368.2083333333\"}",
+            "result": {
+              "expression": "370.8 - 368.2083333333",
+              "result": 2.5916666667
+            },
+            "seconds": 0.00022
+          }
+        ]
+      },
+      {
+        "round": 4,
+        "prompt_tokens": 980,
+        "completion_tokens": 47,
+        "final": "Millbrook has more pupils per school: 370.8 versus Ashgrove’s 368.2083, a difference of 2.5917 pupils per school.\n\nANSWER: Millbrook | 2.592"
+      }
+    ],
+    "seconds": 6.6,
+    "id": "Q-04",
+    "correct": true,
+    "unanswered": false,
+    "expected": "Millbrook | 2.59"
+  },
+  {
+    "texts": [
+      "Coldharbour had the larger 2025 budget per resident, by 14235.31 tenge per resident.\n\nANSWER: Coldharbour | 14235.31"
+    ],
+    "parsed": [
+      "Coldharbour",
+      14235.31
+    ],
+    "in": 2258,
+    "out": 186,
+    "calls": 3,
+    "rounds": 3,
+    "hit_limit": false,
+    "tool_calls": 5,
+    "log": [
+      {
+        "round": 1,
+        "prompt_tokens": 528,
+        "completion_tokens": 109,
+        "tool_calls": [
+          {
+            "id": "call_ikZb69jyKStMhDp9ZT7Xi7P5",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Stonecairn\", \"field\": \"budget_2025\"}",
+            "result": {
+              "district": "Stonecairn",
+              "field": "budget_2025",
+              "value": 2884.6,
+              "unit": "million tenge",
+              "source": "NR-06"
+            },
+            "seconds": 0.00047
+          },
+          {
+            "id": "call_o6UNSJSlVVpdNeJ135u2eKLG",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Stonecairn\", \"field\": \"population_2025\"}",
+            "result": {
+              "district": "Stonecairn",
+              "field": "population_2025",
+              "value": 14926.0,
+              "unit": "residents",
+              "source": "NR-06"
+            },
+            "seconds": 3e-05
+          },
+          {
+            "id": "call_W8giKVQgXe7OoJT02eDcSIuD",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Coldharbour\", \"field\": \"budget_2025\"}",
+            "result": {
+              "district": "Coldharbour",
+              "field": "budget_2025",
+              "value": 2366.9,
+              "unit": "million tenge",
+              "source": "NR-12"
+            },
+            "seconds": 6e-05
+          },
+          {
+            "id": "call_w5owE6elwqJ8rSe8wMu27BvV",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Coldharbour\", \"field\": \"population_2025\"}",
+            "result": {
+              "district": "Coldharbour",
+              "field": "population_2025",
+              "value": 11407.0,
+              "unit": "residents",
+              "source": "NR-12"
+            },
+            "seconds": 3e-05
+          }
+        ]
+      },
+      {
+        "round": 2,
+        "prompt_tokens": 820,
+        "completion_tokens": 39,
+        "tool_calls": [
+          {
+            "id": "call_PS44uGAgfhjpdVefQf5CBGgH",
+            "tool": "calculate",
+            "arguments": "{\"expression\":\"2884.6*1000000/14926 - 2366.9*1000000/11407\"}",
+            "result": {
+              "expression": "2884.6*1000000/14926 - 2366.9*1000000/11407",
+              "result": -14235.3144863892
+            },
+            "seconds": 0.00022
+          }
+        ]
+      },
+      {
+        "round": 3,
+        "prompt_tokens": 910,
+        "completion_tokens": 38,
+        "final": "Coldharbour had the larger 2025 budget per resident, by 14235.31 tenge per resident.\n\nANSWER: Coldharbour | 14235.31"
+      }
+    ],
+    "seconds": 4.87,
+    "id": "Q-05",
+    "correct": true,
+    "unanswered": false,
+    "expected": "Coldharbour | 14235"
+  },
+  {
+    "texts": [
+      "Yes. Redfen and Kelmarsh have a combined 2025 population of 45051, which is 14069 residents more than Ossford.\n\nANSWER: yes | 14069"
+    ],
+    "parsed": [
+      "yes",
+      14069.0
+    ],
+    "in": 2129,
+    "out": 150,
+    "calls": 3,
+    "rounds": 3,
+    "hit_limit": false,
+    "tool_calls": 4,
+    "log": [
+      {
+        "round": 1,
+        "prompt_tokens": 532,
+        "completion_tokens": 84,
+        "tool_calls": [
+          {
+            "id": "call_2KzBGwHm5fyPXcNAuwGihvcW",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Redfen\", \"field\": \"population_2025\"}",
+            "result": {
+              "district": "Redfen",
+              "field": "population_2025",
+              "value": 20934.0,
+              "unit": "residents",
+              "source": "NR-09"
+            },
+            "seconds": 5e-05
+          },
+          {
+            "id": "call_s4Old112UMuFDwoQuMWhpGZE",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Kelmarsh\", \"field\": \"population_2025\"}",
+            "result": {
+              "district": "Kelmarsh",
+              "field": "population_2025",
+              "value": 24117.0,
+              "unit": "residents",
+              "source": "NR-04",
+              "note": "archived profile NR-14 (2019) ignored"
+            },
+            "seconds": 3e-05
+          },
+          {
+            "id": "call_imgYYFMhJIHRZju62P9fTNGu",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Ossford\", \"field\": \"population_2025\"}",
+            "result": {
+              "district": "Ossford",
+              "field": "population_2025",
+              "value": 30982.0,
+              "unit": "residents",
+              "source": "NR-02"
+            },
+            "seconds": 2e-05
+          }
+        ]
+      },
+      {
+        "round": 2,
+        "prompt_tokens": 769,
+        "completion_tokens": 25,
+        "tool_calls": [
+          {
+            "id": "call_WEMjTEsvxiwtl3vsijGOMetT",
+            "tool": "calculate",
+            "arguments": "{\"expression\":\"20934 + 24117 - 30982\"}",
+            "result": {
+              "expression": "20934 + 24117 - 30982",
+              "result": 14069.0
+            },
+            "seconds": 0.00026
+          }
+        ]
+      },
+      {
+        "round": 3,
+        "prompt_tokens": 828,
+        "completion_tokens": 41,
+        "final": "Yes. Redfen and Kelmarsh have a combined 2025 population of 45051, which is 14069 residents more than Ossford.\n\nANSWER: yes | 14069"
+      }
+    ],
+    "seconds": 4.36,
+    "id": "Q-06",
+    "correct": true,
+    "unanswered": false,
+    "expected": "yes | 14069"
+  },
+  {
+    "texts": [
+      "Coldharbour has more paved road per 1,000 residents, by 18.50 km per 1,000 residents.\n\nANSWER: Coldharbour | 18.50"
+    ],
+    "parsed": [
+      "Coldharbour",
+      18.5
+    ],
+    "in": 2261,
+    "out": 186,
+    "calls": 3,
+    "rounds": 3,
+    "hit_limit": false,
+    "tool_calls": 5,
+    "log": [
+      {
+        "round": 1,
+        "prompt_tokens": 536,
+        "completion_tokens": 107,
+        "tool_calls": [
+          {
+            "id": "call_Qy997FdvkVK8Mnei6xDiQXuS",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Coldharbour\", \"field\": \"road_km\"}",
+            "result": {
+              "district": "Coldharbour",
+              "field": "road_km",
+              "value": 598.3,
+              "unit": "km",
+              "source": "NR-12"
+            },
+            "seconds": 0.00057
+          },
+          {
+            "id": "call_KAe1fMF76h56Zw4vSjpnFecA",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Coldharbour\", \"field\": \"population_2025\"}",
+            "result": {
+              "district": "Coldharbour",
+              "field": "population_2025",
+              "value": 11407.0,
+              "unit": "residents",
+              "source": "NR-12"
+            },
+            "seconds": 4e-05
+          },
+          {
+            "id": "call_Nx4C0PC5xQv34vgOqjSTtnoU",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Stonecairn\", \"field\": \"road_km\"}",
+            "result": {
+              "district": "Stonecairn",
+              "field": "road_km",
+              "value": 506.8,
+              "unit": "km",
+              "source": "NR-06"
+            },
+            "seconds": 6e-05
+          },
+          {
+            "id": "call_PDIFT5ArObuMEWdCXCibG4PQ",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Stonecairn\", \"field\": \"population_2025\"}",
+            "result": {
+              "district": "Stonecairn",
+              "field": "population_2025",
+              "value": 14926.0,
+              "unit": "residents",
+              "source": "NR-06"
+            },
+            "seconds": 2e-05
+          }
+        ]
+      },
+      {
+        "round": 2,
+        "prompt_tokens": 818,
+        "completion_tokens": 39,
+        "tool_calls": [
+          {
+            "id": "call_f9K1NbX3wdgUXt5eLtCiAEjo",
+            "tool": "calculate",
+            "arguments": "{\"expression\":\"598.3 / 11407 * 1000 - 506.8 / 14926 * 1000\"}",
+            "result": {
+              "expression": "598.3 / 11407 * 1000 - 506.8 / 14926 * 1000",
+              "result": 18.4960759219
+            },
+            "seconds": 0.00026
+          }
+        ]
+      },
+      {
+        "round": 3,
+        "prompt_tokens": 907,
+        "completion_tokens": 40,
+        "final": "Coldharbour has more paved road per 1,000 residents, by 18.50 km per 1,000 residents.\n\nANSWER: Coldharbour | 18.50"
+      }
+    ],
+    "seconds": 4.71,
+    "id": "Q-07",
+    "correct": true,
+    "unanswered": false,
+    "expected": "Coldharbour | 18.5"
+  },
+  {
+    "texts": [
+      "Brightwater’s households paid more, by 1.064 million tenge, assuming equal household water consumption per resident.\n\nANSWER: Brightwater | 1.064"
+    ],
+    "parsed": [
+      "Brightwater",
+      1.064
+    ],
+    "in": 2113,
+    "out": 146,
+    "calls": 3,
+    "rounds": 3,
+    "hit_limit": false,
+    "tool_calls": 4,
+    "log": [
+      {
+        "round": 1,
+        "prompt_tokens": 534,
+        "completion_tokens": 81,
+        "tool_calls": [
+          {
+            "id": "call_NesUBuGUT3advAFKha1m2c1S",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Brightwater\", \"field\": \"population_2025\"}",
+            "result": {
+              "district": "Brightwater",
+              "field": "population_2025",
+              "value": 44675.0,
+              "unit": "residents",
+              "source": "NR-05"
+            },
+            "seconds": 0.00011
+          },
+          {
+            "id": "call_VfmqXoazDc2UUlkpa66uqe7l",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Millbrook\", \"field\": \"population_2025\"}",
+            "result": {
+              "district": "Millbrook",
+              "field": "population_2025",
+              "value": 37203.0,
+              "unit": "residents",
+              "source": "NR-11"
+            },
+            "seconds": 5e-05
+          },
+          {
+            "id": "call_P2lNgO1KUkZvT4RW2j5x1rJG",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"\", \"field\": \"water_tariff_2025\"}",
+            "result": {
+              "field": "water_tariff_2025",
+              "value": 142.35,
+              "unit": "tenge per cubic metre",
+              "source": "NR-15",
+              "note": "same in every district"
+            },
+            "seconds": 0.00085
+          }
+        ]
+      },
+      {
+        "round": 2,
+        "prompt_tokens": 756,
+        "completion_tokens": 29,
+        "tool_calls": [
+          {
+            "id": "call_zfwybYMXAB3JX5YGBfxN2ivo",
+            "tool": "calculate",
+            "arguments": "{\"expression\":\"(44675-37203)*142.35/1000000\"}",
+            "result": {
+              "expression": "(44675-37203)*142.35/1000000",
+              "result": 1.0636392
+            },
+            "seconds": 0.00024
+          }
+        ]
+      },
+      {
+        "round": 3,
+        "prompt_tokens": 823,
+        "completion_tokens": 36,
+        "final": "Brightwater’s households paid more, by 1.064 million tenge, assuming equal household water consumption per resident.\n\nANSWER: Brightwater | 1.064"
+      }
+    ],
+    "seconds": 4.77,
+    "id": "Q-08",
+    "correct": false,
+    "unanswered": false,
+    "expected": "Brightwater | 72.46"
+  },
+  {
+    "texts": [
+      "Millbrook has the higher 2025 population density by 0.5557 residents per square kilometre.\n\nANSWER: Millbrook | 0.5557"
+    ],
+    "parsed": [
+      "Millbrook",
+      0.5557
+    ],
+    "in": 3302,
+    "out": 226,
+    "calls": 4,
+    "rounds": 4,
+    "hit_limit": false,
+    "tool_calls": 7,
+    "log": [
+      {
+        "round": 1,
+        "prompt_tokens": 526,
+        "completion_tokens": 103,
+        "tool_calls": [
+          {
+            "id": "call_Nr3fMmtYfDoL0aqGibgfPjU2",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Brightwater\", \"field\": \"population_2025\"}",
+            "result": {
+              "district": "Brightwater",
+              "field": "population_2025",
+              "value": 44675.0,
+              "unit": "residents",
+              "source": "NR-05"
+            },
+            "seconds": 0.0001
+          },
+          {
+            "id": "call_EygFJB2RemPekHqSHevVKVuf",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Brightwater\", \"field\": \"area_km2\"}",
+            "result": {
+              "district": "Brightwater",
+              "field": "area_km2",
+              "value": 921.4,
+              "unit": "km2",
+              "source": "NR-05 + NR-16",
+              "note": "profile says 912.4, corrected by NR-16"
+            },
+            "seconds": 0.00064
+          },
+          {
+            "id": "call_wKJmeoDjNFzrXnnZyjIIq3xe",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Millbrook\", \"field\": \"population_2025\"}",
+            "result": {
+              "district": "Millbrook",
+              "field": "population_2025",
+              "value": 37203.0,
+              "unit": "residents",
+              "source": "NR-11"
+            },
+            "seconds": 5e-05
+          },
+          {
+            "id": "call_XNJdzQz7Y6JanUy1Mc46crec",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Millbrook\", \"field\": \"area_km2\"}",
+            "result": {
+              "district": "Millbrook",
+              "field": "area_km2",
+              "value": 758.6,
+              "unit": "km2",
+              "source": "NR-11"
+            },
+            "seconds": 5e-05
+          }
+        ]
+      },
+      {
+        "round": 2,
+        "prompt_tokens": 823,
+        "completion_tokens": 57,
+        "tool_calls": [
+          {
+            "id": "call_j3RzXEKeiBNcY0rG91AHMw6t",
+            "tool": "calculate",
+            "arguments": "{\"expression\": \"44675 / 921.4\"}",
+            "result": {
+              "expression": "44675 / 921.4",
+              "result": 48.4859995659
+            },
+            "seconds": 0.00017
+          },
+          {
+            "id": "call_p2T0GUEl2DRV3tmFIihh6pHR",
+            "tool": "calculate",
+            "arguments": "{\"expression\": \"37203 / 758.6\"}",
+            "result": {
+              "expression": "37203 / 758.6",
+              "result": 49.0416556815
+            },
+            "seconds": 5e-05
+          }
+        ]
+      },
+      {
+        "round": 3,
+        "prompt_tokens": 940,
+        "completion_tokens": 31,
+        "tool_calls": [
+          {
+            "id": "call_rNUYoTt4gwZWBVv41DZVUIVo",
+            "tool": "calculate",
+            "arguments": "{\"expression\":\"37203 / 758.6 - 44675 / 921.4\"}",
+            "result": {
+              "expression": "37203 / 758.6 - 44675 / 921.4",
+              "result": 0.5556561156
+            },
+            "seconds": 0.00029
+          }
+        ]
+      },
+      {
+        "round": 4,
+        "prompt_tokens": 1013,
+        "completion_tokens": 35,
+        "final": "Millbrook has the higher 2025 population density by 0.5557 residents per square kilometre.\n\nANSWER: Millbrook | 0.5557"
+      }
+    ],
+    "seconds": 5.9,
+    "id": "Q-09",
+    "correct": true,
+    "unanswered": false,
+    "expected": "Millbrook | 0.6"
+  },
+  {
+    "texts": [
+      "Stonecairn is older by 8 years.\n\nANSWER: Stonecairn | 8"
+    ],
+    "parsed": [
+      "Stonecairn",
+      8.0
+    ],
+    "in": 1921,
+    "out": 103,
+    "calls": 3,
+    "rounds": 3,
+    "hit_limit": false,
+    "tool_calls": 3,
+    "log": [
+      {
+        "round": 1,
+        "prompt_tokens": 523,
+        "completion_tokens": 60,
+        "tool_calls": [
+          {
+            "id": "call_9dpuLgcUgrzMcOKeYHAtXCjQ",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Stonecairn\", \"field\": \"founded\"}",
+            "result": {
+              "district": "Stonecairn",
+              "field": "founded",
+              "value": 1837.0,
+              "unit": "year",
+              "source": "NR-06"
+            },
+            "seconds": 0.00035
+          },
+          {
+            "id": "call_m8c3e7SbmvXRoxhxDJmSVrpc",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Coldharbour\", \"field\": \"founded\"}",
+            "result": {
+              "district": "Coldharbour",
+              "field": "founded",
+              "value": 1845.0,
+              "unit": "year",
+              "source": "NR-12"
+            },
+            "seconds": 4e-05
+          }
+        ]
+      },
+      {
+        "round": 2,
+        "prompt_tokens": 675,
+        "completion_tokens": 20,
+        "tool_calls": [
+          {
+            "id": "call_E7LsZdy4YjYfbZusg96CVPx5",
+            "tool": "calculate",
+            "arguments": "{\"expression\":\"1845-1837\"}",
+            "result": {
+              "expression": "1845-1837",
+              "result": 8.0
+            },
+            "seconds": 0.0002
+          }
+        ]
+      },
+      {
+        "round": 3,
+        "prompt_tokens": 723,
+        "completion_tokens": 23,
+        "final": "Stonecairn is older by 8 years.\n\nANSWER: Stonecairn | 8"
+      }
+    ],
+    "seconds": 4.63,
+    "id": "Q-10",
+    "correct": true,
+    "unanswered": false,
+    "expected": "Stonecairn | 8"
+  },
+  {
+    "texts": [
+      "Redfen has the fewest pupils per school (314.7). The difference between the highest (Millbrook, 370.8) and lowest is 56.1 pupils per school.\n\nANSWER: Redfen | 56.10"
+    ],
+    "parsed": [
+      "Redfen",
+      56.1
+    ],
+    "in": 3721,
+    "out": 294,
+    "calls": 4,
+    "rounds": 4,
+    "hit_limit": false,
+    "tool_calls": 10,
+    "log": [
+      {
+        "round": 1,
+        "prompt_tokens": 541,
+        "completion_tokens": 150,
+        "tool_calls": [
+          {
+            "id": "call_pGSycdXluS3w8z21GoWItRhY",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Redfen\", \"field\": \"pupils_2025_26\"}",
+            "result": {
+              "district": "Redfen",
+              "field": "pupils_2025_26",
+              "value": 3147.0,
+              "unit": "pupils",
+              "source": "NR-09"
+            },
+            "seconds": 0.00012
+          },
+          {
+            "id": "call_ukLy8Gcl8Zprho6QHCDEQCZ4",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Redfen\", \"field\": \"schools\"}",
+            "result": {
+              "district": "Redfen",
+              "field": "schools",
+              "value": 10.0,
+              "unit": "schools",
+              "source": "NR-09"
+            },
+            "seconds": 4e-05
+          },
+          {
+            "id": "call_LD7V2hveyC9jT5d30lPuwFgK",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Ashgrove\", \"field\": \"pupils_2025_26\"}",
+            "result": {
+              "district": "Ashgrove",
+              "field": "pupils_2025_26",
+              "value": 8837.0,
+              "unit": "pupils",
+              "source": "NR-10"
+            },
+            "seconds": 6e-05
+          },
+          {
+            "id": "call_O0GhLNDN7WKAWQ0EtBJ7xTVK",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Ashgrove\", \"field\": \"schools\"}",
+            "result": {
+              "district": "Ashgrove",
+              "field": "schools",
+              "value": 24.0,
+              "unit": "schools",
+              "source": "NR-10"
+            },
+            "seconds": 4e-05
+          },
+          {
+            "id": "call_efrrCOXgPXWTCoTzQKMgRg7H",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Millbrook\", \"field\": \"pupils_2025_26\"}",
+            "result": {
+              "district": "Millbrook",
+              "field": "pupils_2025_26",
+              "value": 5562.0,
+              "unit": "pupils",
+              "source": "NR-11"
+            },
+            "seconds": 4e-05
+          },
+          {
+            "id": "call_FROLB1SsL5jZADojugpla4ku",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Millbrook\", \"field\": \"schools\"}",
+            "result": {
+              "district": "Millbrook",
+              "field": "schools",
+              "value": 15.0,
+              "unit": "schools",
+              "source": "NR-11"
+            },
+            "seconds": 2e-05
+          }
+        ]
+      },
+      {
+        "round": 2,
+        "prompt_tokens": 948,
+        "completion_tokens": 70,
+        "tool_calls": [
+          {
+            "id": "call_3NyRS7qPBXzxtcZ5HDvH66Yo",
+            "tool": "calculate",
+            "arguments": "{\"expression\": \"3147 / 10\"}",
+            "result": {
+              "expression": "3147 / 10",
+              "result": 314.7
+            },
+            "seconds": 0.00022
+          },
+          {
+            "id": "call_PB3rNJtiCPEbB3eEZKH9IwK2",
+            "tool": "calculate",
+            "arguments": "{\"expression\": \"8837 / 24\"}",
+            "result": {
+              "expression": "8837 / 24",
+              "result": 368.2083333333
+            },
+            "seconds": 7e-05
+          },
+          {
+            "id": "call_DeLFBtoWZDyGrhpt5IMeV7qx",
+            "tool": "calculate",
+            "arguments": "{\"expression\": \"5562 / 15\"}",
+            "result": {
+              "expression": "5562 / 15",
+              "result": 370.8
+            },
+            "seconds": 6e-05
+          }
+        ]
+      },
+      {
+        "round": 3,
+        "prompt_tokens": 1089,
+        "completion_tokens": 23,
+        "tool_calls": [
+          {
+            "id": "call_NmXBdqKjD6WgCfLg4JtOR0He",
+            "tool": "calculate",
+            "arguments": "{\"expression\":\"370.8 - 314.7\"}",
+            "result": {
+              "expression": "370.8 - 314.7",
+              "result": 56.1
+            },
+            "seconds": 0.00016
+          }
+        ]
+      },
+      {
+        "round": 4,
+        "prompt_tokens": 1143,
+        "completion_tokens": 51,
+        "final": "Redfen has the fewest pupils per school (314.7). The difference between the highest (Millbrook, 370.8) and lowest is 56.1 pupils per school.\n\nANSWER: Redfen | 56.10"
+      }
+    ],
+    "seconds": 7.6,
+    "id": "Q-11",
+    "correct": true,
+    "unanswered": false,
+    "expected": "Redfen | 56.1"
+  },
+  {
+    "texts": [
+      "Tarnvale is higher by 64.39 thousand tenge per pupil.\n\nANSWER: Tarnvale | 64.39"
+    ],
+    "parsed": [
+      "Tarnvale",
+      64.39
+    ],
+    "in": 2359,
+    "out": 186,
+    "calls": 3,
+    "rounds": 3,
+    "hit_limit": false,
+    "tool_calls": 5,
+    "log": [
+      {
+        "round": 1,
+        "prompt_tokens": 529,
+        "completion_tokens": 115,
+        "tool_calls": [
+          {
+            "id": "call_KYrhOjLmqV0cmdeNzgraDqos",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Harrowfield\", \"field\": \"budget_2025\"}",
+            "result": {
+              "district": "Harrowfield",
+              "field": "budget_2025",
+              "value": 16021.7,
+              "unit": "million tenge",
+              "source": "NR-07"
+            },
+            "seconds": 0.00013
+          },
+          {
+            "id": "call_YbxrFPRIYW2onTCOEh564spX",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Harrowfield\", \"field\": \"pupils_2025_26\"}",
+            "result": {
+              "district": "Harrowfield",
+              "field": "pupils_2025_26",
+              "value": 13904.0,
+              "unit": "pupils",
+              "source": "NR-07"
+            },
+            "seconds": 7e-05
+          },
+          {
+            "id": "call_ToiZQN7U1WQkLkbijQlNz6dB",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Tarnvale\", \"field\": \"budget_2025\"}",
+            "result": {
+              "district": "Tarnvale",
+              "field": "budget_2025",
+              "value": 12960.3,
+              "unit": "million tenge",
+              "source": "NR-03",
+              "note": "archived profile NR-13 (2019) ignored"
+            },
+            "seconds": 9e-05
+          },
+          {
+            "id": "call_cmzMMVn6UyIViCmkdkoGvwEr",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Tarnvale\", \"field\": \"pupils_2025_26\"}",
+            "result": {
+              "district": "Tarnvale",
+              "field": "pupils_2025_26",
+              "value": 10652.0,
+              "unit": "pupils",
+              "source": "NR-03",
+              "note": "archived profile NR-13 (2019) ignored"
+            },
+            "seconds": 5e-05
+          }
+        ]
+      },
+      {
+        "round": 2,
+        "prompt_tokens": 867,
+        "completion_tokens": 43,
+        "tool_calls": [
+          {
+            "id": "call_QXzE4eN4LyefxJOzh25wfAGE",
+            "tool": "calculate",
+            "arguments": "{\"expression\":\"(16021.7*1000000/13904 - 12960.3*1000000/10652)/1000\"}",
+            "result": {
+              "expression": "(16021.7*1000000/13904 - 12960.3*1000000/10652)/1000",
+              "result": -64.3924008501
+            },
+            "seconds": 0.00029
+          }
+        ]
+      },
+      {
+        "round": 3,
+        "prompt_tokens": 963,
+        "completion_tokens": 28,
+        "final": "Tarnvale is higher by 64.39 thousand tenge per pupil.\n\nANSWER: Tarnvale | 64.39"
+      }
+    ],
+    "seconds": 4.86,
+    "id": "Q-12",
+    "correct": true,
+    "unanswered": false,
+    "expected": "Tarnvale | 64.4"
+  },
+  {
+    "texts": [
+      "Coldharbour lost the largest percentage, at 4.159% (compared with Stonecairn’s 3.535% and Ossford’s 1.831%).\n\nANSWER: Coldharbour | 4.159"
+    ],
+    "parsed": [
+      "Coldharbour",
+      4.159
+    ],
+    "in": 2647,
+    "out": 303,
+    "calls": 3,
+    "rounds": 3,
+    "hit_limit": false,
+    "tool_calls": 9,
+    "log": [
+      {
+        "round": 1,
+        "prompt_tokens": 537,
+        "completion_tokens": 153,
+        "tool_calls": [
+          {
+            "id": "call_NGTRPgKmVpgoFlMqtNlFWRJf",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Ossford\", \"field\": \"population_2020\"}",
+            "result": {
+              "district": "Ossford",
+              "field": "population_2020",
+              "value": 31560.0,
+              "unit": "residents",
+              "source": "NR-02"
+            },
+            "seconds": 0.00046
+          },
+          {
+            "id": "call_dmrrNUvqRZlB1ehL058SdcTP",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Ossford\", \"field\": \"population_2025\"}",
+            "result": {
+              "district": "Ossford",
+              "field": "population_2025",
+              "value": 30982.0,
+              "unit": "residents",
+              "source": "NR-02"
+            },
+            "seconds": 4e-05
+          },
+          {
+            "id": "call_lwSThtHx4X9v6YC5KSJH7H3T",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Stonecairn\", \"field\": \"population_2020\"}",
+            "result": {
+              "district": "Stonecairn",
+              "field": "population_2020",
+              "value": 15473.0,
+              "unit": "residents",
+              "source": "NR-06"
+            },
+            "seconds": 4e-05
+          },
+          {
+            "id": "call_M34mncv6ZA3dQYZRNqbC8STe",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Stonecairn\", \"field\": \"population_2025\"}",
+            "result": {
+              "district": "Stonecairn",
+              "field": "population_2025",
+              "value": 14926.0,
+              "unit": "residents",
+              "source": "NR-06"
+            },
+            "seconds": 2e-05
+          },
+          {
+            "id": "call_5u4ArFyJLO4V72JABNF3y5TI",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Coldharbour\", \"field\": \"population_2020\"}",
+            "result": {
+              "district": "Coldharbour",
+              "field": "population_2020",
+              "value": 11902.0,
+              "unit": "residents",
+              "source": "NR-12"
+            },
+            "seconds": 4e-05
+          },
+          {
+            "id": "call_WFJ6Tt1qgrmebzm9HqdyQmwM",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Coldharbour\", \"field\": \"population_2025\"}",
+            "result": {
+              "district": "Coldharbour",
+              "field": "population_2025",
+              "value": 11407.0,
+              "unit": "residents",
+              "source": "NR-12"
+            },
+            "seconds": 2e-05
+          }
+        ]
+      },
+      {
+        "round": 2,
+        "prompt_tokens": 953,
+        "completion_tokens": 100,
+        "tool_calls": [
+          {
+            "id": "call_FWd0vfQRO0TezczORmZKV7Wd",
+            "tool": "calculate",
+            "arguments": "{\"expression\": \"(31560 - 30982) / 31560 * 100\"}",
+            "result": {
+              "expression": "(31560 - 30982) / 31560 * 100",
+              "result": 1.8314321926
+            },
+            "seconds": 0.00022
+          },
+          {
+            "id": "call_eC7nmNhmbpOZb57U3zlsR9Qb",
+            "tool": "calculate",
+            "arguments": "{\"expression\": \"(15473 - 14926) / 15473 * 100\"}",
+            "result": {
+              "expression": "(15473 - 14926) / 15473 * 100",
+              "result": 3.5351903315
+            },
+            "seconds": 7e-05
+          },
+          {
+            "id": "call_g64YWpQLggEO34nHgWujVq74",
+            "tool": "calculate",
+            "arguments": "{\"expression\": \"(11902 - 11407) / 11902 * 100\"}",
+            "result": {
+              "expression": "(11902 - 11407) / 11902 * 100",
+              "result": 4.1589648799
+            },
+            "seconds": 6e-05
+          }
+        ]
+      },
+      {
+        "round": 3,
+        "prompt_tokens": 1157,
+        "completion_tokens": 50,
+        "final": "Coldharbour lost the largest percentage, at 4.159% (compared with Stonecairn’s 3.535% and Ossford’s 1.831%).\n\nANSWER: Coldharbour | 4.159"
+      }
+    ],
+    "seconds": 5.15,
+    "id": "Q-13",
+    "correct": true,
+    "unanswered": false,
+    "expected": "Coldharbour | 4.16"
+  },
+  {
+    "texts": [
+      "Ashgrove used more water: 4.853 litres per resident per day more than Tarnvale (204.6868 versus 199.8341).\n\nANSWER: Ashgrove | 4.853"
+    ],
+    "parsed": [
+      "Ashgrove",
+      4.853
+    ],
+    "in": 2385,
+    "out": 223,
+    "calls": 3,
+    "rounds": 3,
+    "hit_limit": false,
+    "tool_calls": 6,
+    "log": [
+      {
+        "round": 1,
+        "prompt_tokens": 532,
+        "completion_tokens": 107,
+        "tool_calls": [
+          {
+            "id": "call_XF5ZCih5mUBIVd56t33OTVPm",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Tarnvale\", \"field\": \"water_2025\"}",
+            "result": {
+              "district": "Tarnvale",
+              "field": "water_2025",
+              "value": 5207.0,
+              "unit": "megalitres",
+              "source": "NR-03",
+              "note": "archived profile NR-13 (2019) ignored"
+            },
+            "seconds": 0.00016
+          },
+          {
+            "id": "call_ZQ7XTBZx3upXR875PfkudAbd",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Tarnvale\", \"field\": \"population_2025\"}",
+            "result": {
+              "district": "Tarnvale",
+              "field": "population_2025",
+              "value": 71388.0,
+              "unit": "residents",
+              "source": "NR-03",
+              "note": "archived profile NR-13 (2019) ignored"
+            },
+            "seconds": 6e-05
+          },
+          {
+            "id": "call_EQ2baHlujX2tNyOR7ge5hDt7",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Ashgrove\", \"field\": \"water_2025\"}",
+            "result": {
+              "district": "Ashgrove",
+              "field": "water_2025",
+              "value": 4390.0,
+              "unit": "megalitres",
+              "source": "NR-10"
+            },
+            "seconds": 7e-05
+          },
+          {
+            "id": "call_HSkVOUdfn6fM89FOZk90k4PO",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Ashgrove\", \"field\": \"population_2025\"}",
+            "result": {
+              "district": "Ashgrove",
+              "field": "population_2025",
+              "value": 58760.0,
+              "unit": "residents",
+              "source": "NR-10"
+            },
+            "seconds": 3e-05
+          }
+        ]
+      },
+      {
+        "round": 2,
+        "prompt_tokens": 854,
+        "completion_tokens": 71,
+        "tool_calls": [
+          {
+            "id": "call_uikGX7zHOr2Az6JSpLoytHOY",
+            "tool": "calculate",
+            "arguments": "{\"expression\": \"5207 * 1000000 / 71388 / 365\"}",
+            "result": {
+              "expression": "5207 * 1000000 / 71388 / 365",
+              "result": 199.8340536877
+            },
+            "seconds": 0.00028
+          },
+          {
+            "id": "call_GPcL1gGpQlHTnorKjeK99F0d",
+            "tool": "calculate",
+            "arguments": "{\"expression\": \"4390 * 1000000 / 58760 / 365\"}",
+            "result": {
+              "expression": "4390 * 1000000 / 58760 / 365",
+              "result": 204.6868151851
+            },
+            "seconds": 8e-05
+          }
+        ]
+      },
+      {
+        "round": 3,
+        "prompt_tokens": 999,
+        "completion_tokens": 45,
+        "final": "Ashgrove used more water: 4.853 litres per resident per day more than Tarnvale (204.6868 versus 199.8341).\n\nANSWER: Ashgrove | 4.853"
+      }
+    ],
+    "seconds": 4.69,
+    "id": "Q-14",
+    "correct": true,
+    "unanswered": false,
+    "expected": "Ashgrove | 4.9"
+  },
+  {
+    "texts": [
+      "Redfen has more pupils per school by 17.6091 pupils per school.\n\nANSWER: Redfen | 17.6091"
+    ],
+    "parsed": [
+      "Redfen",
+      17.6091
+    ],
+    "in": 2278,
+    "out": 164,
+    "calls": 3,
+    "rounds": 3,
+    "hit_limit": false,
+    "tool_calls": 5,
+    "log": [
+      {
+        "round": 1,
+        "prompt_tokens": 527,
+        "completion_tokens": 107,
+        "tool_calls": [
+          {
+            "id": "call_EwjVoHLlxXciqmcLdkzbDF8F",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Kelmarsh\", \"field\": \"pupils_2025_26\"}",
+            "result": {
+              "district": "Kelmarsh",
+              "field": "pupils_2025_26",
+              "value": 3268.0,
+              "unit": "pupils",
+              "source": "NR-04",
+              "note": "archived profile NR-14 (2019) ignored"
+            },
+            "seconds": 0.00016
+          },
+          {
+            "id": "call_8rUFg2oy6f40nzcIt88nGezf",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Kelmarsh\", \"field\": \"schools\"}",
+            "result": {
+              "district": "Kelmarsh",
+              "field": "schools",
+              "value": 11.0,
+              "unit": "schools",
+              "source": "NR-04",
+              "note": "archived profile NR-14 (2019) ignored"
+            },
+            "seconds": 7e-05
+          },
+          {
+            "id": "call_1W3emebVSzSDS02WyaPRuMxu",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Redfen\", \"field\": \"pupils_2025_26\"}",
+            "result": {
+              "district": "Redfen",
+              "field": "pupils_2025_26",
+              "value": 3147.0,
+              "unit": "pupils",
+              "source": "NR-09"
+            },
+            "seconds": 8e-05
+          },
+          {
+            "id": "call_EZRGEXcloPgzOQJ1dRpbUPBm",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Redfen\", \"field\": \"schools\"}",
+            "result": {
+              "district": "Redfen",
+              "field": "schools",
+              "value": 10.0,
+              "unit": "schools",
+              "source": "NR-09"
+            },
+            "seconds": 5e-05
+          }
+        ]
+      },
+      {
+        "round": 2,
+        "prompt_tokens": 843,
+        "completion_tokens": 27,
+        "tool_calls": [
+          {
+            "id": "call_AvSwivexdqLfPyZqLdCHOWGJ",
+            "tool": "calculate",
+            "arguments": "{\"expression\":\"3268 / 11 - 3147 / 10\"}",
+            "result": {
+              "expression": "3268 / 11 - 3147 / 10",
+              "result": -17.6090909091
+            },
+            "seconds": 0.00023
+          }
+        ]
+      },
+      {
+        "round": 3,
+        "prompt_tokens": 908,
+        "completion_tokens": 30,
+        "final": "Redfen has more pupils per school by 17.6091 pupils per school.\n\nANSWER: Redfen | 17.6091"
+      }
+    ],
+    "seconds": 4.42,
+    "id": "Q-15",
+    "correct": true,
+    "unanswered": false,
+    "expected": "Redfen | 17.61"
+  },
+  {
+    "texts": [
+      "Yes. Ossbridge and Ossford together are larger than Tarnvale by 23.90 square kilometres.\n\nANSWER: yes | 23.90"
+    ],
+    "parsed": [
+      "yes",
+      23.9
+    ],
+    "in": 2122,
+    "out": 147,
+    "calls": 3,
+    "rounds": 3,
+    "hit_limit": false,
+    "tool_calls": 4,
+    "log": [
+      {
+        "round": 1,
+        "prompt_tokens": 526,
+        "completion_tokens": 85,
+        "tool_calls": [
+          {
+            "id": "call_xHAu7S8meyqQ0EnlDDgkWDEm",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Ossbridge\", \"field\": \"area_km2\"}",
+            "result": {
+              "district": "Ossbridge",
+              "field": "area_km2",
+              "value": 1284.6,
+              "unit": "km2",
+              "source": "NR-01"
+            },
+            "seconds": 0.00012
+          },
+          {
+            "id": "call_qREiRQS0wg8nvgs84FgRTJ3X",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Ossford\", \"field\": \"area_km2\"}",
+            "result": {
+              "district": "Ossford",
+              "field": "area_km2",
+              "value": 846.2,
+              "unit": "km2",
+              "source": "NR-02"
+            },
+            "seconds": 8e-05
+          },
+          {
+            "id": "call_VYdu9jqJbK8exiayAw5s1NjC",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Tarnvale\", \"field\": \"area_km2\"}",
+            "result": {
+              "district": "Tarnvale",
+              "field": "area_km2",
+              "value": 2106.9,
+              "unit": "km2",
+              "source": "NR-03",
+              "note": "archived profile NR-13 (2019) ignored"
+            },
+            "seconds": 9e-05
+          }
+        ]
+      },
+      {
+        "round": 2,
+        "prompt_tokens": 764,
+        "completion_tokens": 30,
+        "tool_calls": [
+          {
+            "id": "call_UXGSxnFChuYBvdpjG3B0TYZW",
+            "tool": "calculate",
+            "arguments": "{\"expression\":\"1284.6 + 846.2 - 2106.9\"}",
+            "result": {
+              "expression": "1284.6 + 846.2 - 2106.9",
+              "result": 23.9
+            },
+            "seconds": 0.00023
+          }
+        ]
+      },
+      {
+        "round": 3,
+        "prompt_tokens": 832,
+        "completion_tokens": 32,
+        "final": "Yes. Ossbridge and Ossford together are larger than Tarnvale by 23.90 square kilometres.\n\nANSWER: yes | 23.90"
+      }
+    ],
+    "seconds": 4.3,
+    "id": "Q-16",
+    "correct": true,
+    "unanswered": false,
+    "expected": "yes | 23.9"
+  },
+  {
+    "texts": [
+      "Harrowfield households paid more, by 884.4572 tenge per resident.\n\nANSWER: Harrowfield | 884.4572"
+    ],
+    "parsed": [
+      "Harrowfield",
+      884.4572
+    ],
+    "in": 2410,
+    "out": 196,
+    "calls": 3,
+    "rounds": 3,
+    "hit_limit": false,
+    "tool_calls": 6,
+    "log": [
+      {
+        "round": 1,
+        "prompt_tokens": 538,
+        "completion_tokens": 127,
+        "tool_calls": [
+          {
+            "id": "call_n18tqCCflejhbiFVwwzDFne0",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"\", \"field\": \"water_tariff_2025\"}",
+            "result": {
+              "field": "water_tariff_2025",
+              "value": 142.35,
+              "unit": "tenge per cubic metre",
+              "source": "NR-15",
+              "note": "same in every district"
+            },
+            "seconds": 0.0001
+          },
+          {
+            "id": "call_zamMfKe7qEh1jNqAMLG3U3t6",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Harrowfield\", \"field\": \"water_2025\"}",
+            "result": {
+              "district": "Harrowfield",
+              "field": "water_2025",
+              "value": 7146.0,
+              "unit": "megalitres",
+              "source": "NR-07"
+            },
+            "seconds": 0.0001
+          },
+          {
+            "id": "call_MNbWfbinBsfBE5QTtYVhHevs",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Harrowfield\", \"field\": \"population_2025\"}",
+            "result": {
+              "district": "Harrowfield",
+              "field": "population_2025",
+              "value": 90212.0,
+              "unit": "residents",
+              "source": "NR-07"
+            },
+            "seconds": 6e-05
+          },
+          {
+            "id": "call_Ia7MOsN2UPPNrUxLyXMSH4Eb",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Ossbridge\", \"field\": \"water_2025\"}",
+            "result": {
+              "district": "Ossbridge",
+              "field": "water_2025",
+              "value": 3862.0,
+              "unit": "megalitres",
+              "source": "NR-01"
+            },
+            "seconds": 8e-05
+          },
+          {
+            "id": "call_EB8v4HYrn7wSxJU0p9OeryPr",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Ossbridge\", \"field\": \"population_2025\"}",
+            "result": {
+              "district": "Ossbridge",
+              "field": "population_2025",
+              "value": 52904.0,
+              "unit": "residents",
+              "source": "NR-01"
+            },
+            "seconds": 5e-05
+          }
+        ]
+      },
+      {
+        "round": 2,
+        "prompt_tokens": 894,
+        "completion_tokens": 37,
+        "tool_calls": [
+          {
+            "id": "call_HyrOzKaDiQ98HKELuO31KeKF",
+            "tool": "calculate",
+            "arguments": "{\"expression\":\"(7146*1000/90212-3862*1000/52904)*142.35\"}",
+            "result": {
+              "expression": "(7146*1000/90212-3862*1000/52904)*142.35",
+              "result": 884.4571621969
+            },
+            "seconds": 0.00026
+          }
+        ]
+      },
+      {
+        "round": 3,
+        "prompt_tokens": 978,
+        "completion_tokens": 32,
+        "final": "Harrowfield households paid more, by 884.4572 tenge per resident.\n\nANSWER: Harrowfield | 884.4572"
+      }
+    ],
+    "seconds": 5.22,
+    "id": "Q-17",
+    "correct": true,
+    "unanswered": false,
+    "expected": "Harrowfield | 884"
+  },
+  {
+    "texts": [
+      "Yes. Projected 2030 population: 40013.3914 residents.\n\nANSWER: yes | 40013.3914"
+    ],
+    "parsed": [
+      "yes",
+      40013.3914
+    ],
+    "in": 2028,
+    "out": 120,
+    "calls": 3,
+    "rounds": 3,
+    "hit_limit": false,
+    "tool_calls": 3,
+    "log": [
+      {
+        "round": 1,
+        "prompt_tokens": 549,
+        "completion_tokens": 61,
+        "tool_calls": [
+          {
+            "id": "call_70Hku6E5acFaYUpNkdWYHOzD",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Millbrook\", \"field\": \"population_2020\"}",
+            "result": {
+              "district": "Millbrook",
+              "field": "population_2020",
+              "value": 34590.0,
+              "unit": "residents",
+              "source": "NR-11"
+            },
+            "seconds": 0.00025
+          },
+          {
+            "id": "call_RVbAPZCGIrkPG8uLRDbF84W0",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Millbrook\", \"field\": \"population_2025\"}",
+            "result": {
+              "district": "Millbrook",
+              "field": "population_2025",
+              "value": 37203.0,
+              "unit": "residents",
+              "source": "NR-11"
+            },
+            "seconds": 6e-05
+          }
+        ]
+      },
+      {
+        "round": 2,
+        "prompt_tokens": 705,
+        "completion_tokens": 29,
+        "tool_calls": [
+          {
+            "id": "call_ZhZLv12iJgokm3mN4WNi4uhm",
+            "tool": "calculate",
+            "arguments": "{\"expression\":\"37203*(1+(37203-34590)/34590)\" }",
+            "result": {
+              "expression": "37203*(1+(37203-34590)/34590)",
+              "result": 40013.3914137034
+            },
+            "seconds": 0.00032
+          }
+        ]
+      },
+      {
+        "round": 3,
+        "prompt_tokens": 774,
+        "completion_tokens": 30,
+        "final": "Yes. Projected 2030 population: 40013.3914 residents.\n\nANSWER: yes | 40013.3914"
+      }
+    ],
+    "seconds": 4.01,
+    "id": "Q-18",
+    "correct": true,
+    "unanswered": false,
+    "expected": "yes | 40013"
+  },
+  {
+    "texts": [
+      "Lindenmoor has the denser paved road network: 0.3961 km/km² versus Redfen’s 0.3612 km/km², a difference of 0.03484 km/km².\n\nANSWER: Lindenmoor | 0.03484"
+    ],
+    "parsed": [
+      "Lindenmoor",
+      0.03484
+    ],
+    "in": 3248,
+    "out": 254,
+    "calls": 4,
+    "rounds": 4,
+    "hit_limit": false,
+    "tool_calls": 7,
+    "log": [
+      {
+        "round": 1,
+        "prompt_tokens": 526,
+        "completion_tokens": 103,
+        "tool_calls": [
+          {
+            "id": "call_wn0pKUtNhaGzpgpsQ5xPs6Bu",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Lindenmoor\", \"field\": \"road_km\"}",
+            "result": {
+              "district": "Lindenmoor",
+              "field": "road_km",
+              "value": 402.3,
+              "unit": "km",
+              "source": "NR-08"
+            },
+            "seconds": 0.00014
+          },
+          {
+            "id": "call_ZZZKLs48uKzj4TXhMcruhNzQ",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Lindenmoor\", \"field\": \"area_km2\"}",
+            "result": {
+              "district": "Lindenmoor",
+              "field": "area_km2",
+              "value": 1015.7,
+              "unit": "km2",
+              "source": "NR-08"
+            },
+            "seconds": 7e-05
+          },
+          {
+            "id": "call_8Evt0ruMRKMbCGNGfQlIKjOo",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Redfen\", \"field\": \"road_km\"}",
+            "result": {
+              "district": "Redfen",
+              "field": "road_km",
+              "value": 244.6,
+              "unit": "km",
+              "source": "NR-09"
+            },
+            "seconds": 9e-05
+          },
+          {
+            "id": "call_dQ275yWFSfgGmKpOplvWpfj1",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Redfen\", \"field\": \"area_km2\"}",
+            "result": {
+              "district": "Redfen",
+              "field": "area_km2",
+              "value": 677.1,
+              "unit": "km2",
+              "source": "NR-09"
+            },
+            "seconds": 5e-05
+          }
+        ]
+      },
+      {
+        "round": 2,
+        "prompt_tokens": 799,
+        "completion_tokens": 60,
+        "tool_calls": [
+          {
+            "id": "call_C4PDHkBdoQyk4cHRISt2GxAS",
+            "tool": "calculate",
+            "arguments": "{\"expression\": \"402.3 / 1015.7\"}",
+            "result": {
+              "expression": "402.3 / 1015.7",
+              "result": 0.3960815201
+            },
+            "seconds": 0.00022
+          },
+          {
+            "id": "call_fghs1T23uLf8nNyJyOdR9wM4",
+            "tool": "calculate",
+            "arguments": "{\"expression\": \"244.6 / 677.1\"}",
+            "result": {
+              "expression": "244.6 / 677.1",
+              "result": 0.3612464924
+            },
+            "seconds": 7e-05
+          }
+        ]
+      },
+      {
+        "round": 3,
+        "prompt_tokens": 922,
+        "completion_tokens": 34,
+        "tool_calls": [
+          {
+            "id": "call_IZPSPoPAlAEhc7rjSvLVfxMr",
+            "tool": "calculate",
+            "arguments": "{\"expression\":\"402.3 / 1015.7 - 244.6 / 677.1\"}",
+            "result": {
+              "expression": "402.3 / 1015.7 - 244.6 / 677.1",
+              "result": 0.0348350277
+            },
+            "seconds": 0.00027
+          }
+        ]
+      },
+      {
+        "round": 4,
+        "prompt_tokens": 1001,
+        "completion_tokens": 57,
+        "final": "Lindenmoor has the denser paved road network: 0.3961 km/km² versus Redfen’s 0.3612 km/km², a difference of 0.03484 km/km².\n\nANSWER: Lindenmoor | 0.03484"
+      }
+    ],
+    "seconds": 6.16,
+    "id": "Q-19",
+    "correct": true,
+    "unanswered": false,
+    "expected": "Lindenmoor | 0.035"
+  },
+  {
+    "texts": [
+      "Ashgrove had the largest 2025 budget per resident. It exceeded Ossbridge, the lowest, by 2993.3428 tenge per resident.\n\nANSWER: Ashgrove | 2993.3428"
+    ],
+    "parsed": [
+      "Ashgrove",
+      2993.3428
+    ],
+    "in": 3845,
+    "out": 317,
+    "calls": 4,
+    "rounds": 4,
+    "hit_limit": false,
+    "tool_calls": 10,
+    "log": [
+      {
+        "round": 1,
+        "prompt_tokens": 539,
+        "completion_tokens": 151,
+        "tool_calls": [
+          {
+            "id": "call_oJrCqvksnBfRMxXv6IFq1kqM",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Ossbridge\", \"field\": \"budget_2025\"}",
+            "result": {
+              "district": "Ossbridge",
+              "field": "budget_2025",
+              "value": 9284.5,
+              "unit": "million tenge",
+              "source": "NR-01"
+            },
+            "seconds": 0.00018
+          },
+          {
+            "id": "call_BNuUkqxz1gzEBCcOnzNb5Hjb",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Ossbridge\", \"field\": \"population_2025\"}",
+            "result": {
+              "district": "Ossbridge",
+              "field": "population_2025",
+              "value": 52904.0,
+              "unit": "residents",
+              "source": "NR-01"
+            },
+            "seconds": 4e-05
+          },
+          {
+            "id": "call_d5fTdxY76R0JQV68WW17sdbJ",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Ashgrove\", \"field\": \"budget_2025\"}",
+            "result": {
+              "district": "Ashgrove",
+              "field": "budget_2025",
+              "value": 10488.1,
+              "unit": "million tenge",
+              "source": "NR-10"
+            },
+            "seconds": 5e-05
+          },
+          {
+            "id": "call_wvvdpwyCGqZpD3vYHOWZLK9V",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Ashgrove\", \"field\": \"population_2025\"}",
+            "result": {
+              "district": "Ashgrove",
+              "field": "population_2025",
+              "value": 58760.0,
+              "unit": "residents",
+              "source": "NR-10"
+            },
+            "seconds": 3e-05
+          },
+          {
+            "id": "call_Ckh7Pu8p5weLcUyNp9sSrrq8",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Harrowfield\", \"field\": \"budget_2025\"}",
+            "result": {
+              "district": "Harrowfield",
+              "field": "budget_2025",
+              "value": 16021.7,
+              "unit": "million tenge",
+              "source": "NR-07"
+            },
+            "seconds": 4e-05
+          },
+          {
+            "id": "call_PfcRD9E20gY7gXZxgUMCZTTV",
+            "tool": "lookup",
+            "arguments": "{\"district\": \"Harrowfield\", \"field\": \"population_2025\"}",
+            "result": {
+              "district": "Harrowfield",
+              "field": "population_2025",
+              "value": 90212.0,
+              "unit": "residents",
+              "source": "NR-07"
+            },
+            "seconds": 3e-05
+          }
+        ]
+      },
+      {
+        "round": 2,
+        "prompt_tokens": 954,
+        "completion_tokens": 88,
+        "tool_calls": [
+          {
+            "id": "call_GTa7G1MgUNT02EU9cUoBOjE9",
+            "tool": "calculate",
+            "arguments": "{\"expression\": \"9284.5*1000000/52904\"}",
+            "result": {
+              "expression": "9284.5*1000000/52904",
+              "result": 175497.1268713141
+            },
+            "seconds": 0.00022
+          },
+          {
+            "id": "call_6IJcWJHff5jkN3UNlfNDEER4",
+            "tool": "calculate",
+            "arguments": "{\"expression\": \"10488.1*1000000/58760\"}",
+            "result": {
+              "expression": "10488.1*1000000/58760",
+              "result": 178490.4697072839
+            },
+            "seconds": 6e-05
+          },
+          {
+            "id": "call_n6wJmVJBJjGGdqFQ0DyhwK76",
+            "tool": "calculate",
+            "arguments": "{\"expression\": \"16021.7*1000000/90212\"}",
+            "result": {
+              "expression": "16021.7*1000000/90212",
+              "result": 177600.5409479892
+            },
+            "seconds": 5e-05
+          }
+        ]
+      },
+      {
+        "round": 3,
+        "prompt_tokens": 1140,
+        "completion_tokens": 30,
+        "tool_calls": [
+          {
+            "id": "call_Q6JtRlvNWNoX7GfGOjL6TH0J",
+            "tool": "calculate",
+            "arguments": "{\"expression\":\"178490.4697072839-175497.1268713141\"}",
+            "result": {
+              "expression": "178490.4697072839-175497.1268713141",
+              "result": 2993.3428359698
+            },
+            "seconds": 0.00021
+          }
+        ]
+      },
+      {
+        "round": 4,
+        "prompt_tokens": 1212,
+        "completion_tokens": 48,
+        "final": "Ashgrove had the largest 2025 budget per resident. It exceeded Ossbridge, the lowest, by 2993.3428 tenge per resident.\n\nANSWER: Ashgrove | 2993.3428"
+      }
+    ],
+    "seconds": 6.21,
+    "id": "Q-20",
+    "correct": true,
+    "unanswered": false,
+    "expected": "Ashgrove | 2993"
+  }
+]

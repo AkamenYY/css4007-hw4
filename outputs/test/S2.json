@@ -1,0 +1,45 @@
+[
+  {
+    "texts": [
+      "Brightwater: 44,675 ÷ 921.4 = 48.48 residents/km² (NR-05, corrected by NR-16).  \nMillbrook: 37,203 ÷ 758.6 = 49.04 residents/km² (NR-11).  \nDifference: 49.04 − 48.48 = 0.5597 residents/km².\n\nANSWER: Millbrook | 0.5597",
+      "Brightwater density = 44675 ÷ 921.4 = 48.48164 residents/km² (NR-05, corrected by NR-16)\n\nMillbrook density = 37203 ÷ 758.6 = 49.05141 residents/km² (NR-11)\n\nDifference = 49.05141 − 48.48164 = 0.56977 residents/km²\n\nANSWER: Millbrook | 0.5698",
+      "Brightwater: 44,675 ÷ 921.4 = 48.51 residents/km² (NR-05, corrected by NR-16).  \nMillbrook: 37,203 ÷ 758.6 = 49.04 residents/km² (NR-11).  \nDifference: 49.04 − 48.51 = 0.5258 residents/km².\n\nANSWER: Millbrook | 0.5258",
+      "Brightwater: \\(44675 \\div 921.4 = 48.48597\\) residents/km² (population and corrected area from NR-05 and NR-16).\n\nMillbrook: \\(37203 \\div 758.6 = 49.03915\\) residents/km² (NR-11).\n\nDifference: \\(49.03915 - 48.48597 = 0.55318\\) residents/km².\n\nANSWER: Millbrook | 0.5532",
+      "Brightwater: 44,675 ÷ 921.4 = 48.48 residents/km² (NR-05, corrected by NR-16).\n\nMillbrook: 37,203 ÷ 758.6 = 49.04 residents/km² (NR-11).\n\n49.04 − 48.48 = 0.56 residents/km².\n\nANSWER: Millbrook | 0.56"
+    ],
+    "votes": [
+      [
+        "millbrook",
+        0.6
+      ],
+      [
+        "millbrook",
+        0.6
+      ],
+      [
+        "millbrook",
+        0.5
+      ],
+      [
+        "millbrook",
+        0.6
+      ],
+      [
+        "millbrook",
+        0.6
+      ]
+    ],
+    "parsed": [
+      "millbrook",
+      0.6
+    ],
+    "in": 11155,
+    "out": 474,
+    "calls": 5,
+    "seconds": 10.85,
+    "id": "Q-09",
+    "correct": true,
+    "unanswered": false,
+    "expected": "Millbrook | 0.6"
+  }
+]

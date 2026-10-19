@@ -1,0 +1,167 @@
+
+=== run1 S3 rounds / tool calls per question
+Q-01:3r/5c, Q-02:3r/6c, Q-03:4r/7c, Q-04:3r/5c, Q-05:4r/7c, Q-06:3r/4c, Q-07:3r/7c, Q-08:4r/6c, Q-09:4r/7c, Q-10:3r/3c, Q-11:4r/10c, Q-12:3r/7c, Q-13:3r/9c, Q-14:3r/5c, Q-15:3r/5c, Q-16:3r/4c, Q-17:3r/6c, Q-18:3r/3c, Q-19:3r/7c, Q-20:4r/10c
+median rounds 3.0, max 4
+
+=== run1 S1 wrong answers: got vs expected
+Q-01: got ['Ossbridge', 5.134] | expected Ossbridge | 4.6
+Q-02: got ['Tarnvale', 0.1016] | expected Harrowfield | 1.69
+Q-03: got ['Lindenmoor', 0.0243] | expected Lindenmoor | 5.3
+Q-04: got ['Ashgrove', 121.0785] | expected Millbrook | 2.59
+Q-05: got ['Stonecairn', 3466.52] | expected Coldharbour | 14235
+Q-07: got ['Coldharbour', 21.13] | expected Coldharbour | 18.5
+Q-08: got ['Brightwater', 72.43875] | expected Brightwater | 72.46
+Q-09: got ['Brightwater', 12.01] | expected Millbrook | 0.6
+Q-11: got ['Redfen', 222.2] | expected Redfen | 56.1
+Q-12: got ['Harrowfield', 0.859] | expected Tarnvale | 64.4
+Q-14: got ['Tarnvale', 0.0067] | expected Ashgrove | 4.9
+Q-15: got ['Redfen', 4.181] | expected Redfen | 17.61
+Q-17: got ['Harrowfield', 4.247] | expected Harrowfield | 884
+Q-19: got ['Redfen', 0.04562] | expected Lindenmoor | 0.035
+Q-20: got ['Harrowfield', 10059.54] | expected Ashgrove | 2993
+
+=== run1 S2 wrong answers: got vs expected
+Q-05: got ['coldharbour', 14346.0] | expected Coldharbour | 14235 | votes [['coldharbour', 14346.0], ['coldharbour', 14350.0], ['coldharbour', 13.0], ['coldharbour', 14247.0], ['coldharbour', 14332.0]]
+Q-14: got ['ashgrove', 0.0] | expected Ashgrove | 4.9 | votes [['ashgrove', 4.6], ['ashgrove', 4.7], ['ashgrove', 0.0], ['ashgrove', 5.0], ['ashgrove', 0.0]]
+Q-17: got ['harrowfield', 890.0] | expected Harrowfield | 884 | votes [['harrowfield', 890.0], ['harrowfield', 2.0], ['harrowfield', 885.0], ['harrowfield', 877.0], ['harrowfield', 891.0]]
+Q-20: got ['ashgrove', 2999.0] | expected Ashgrove | 2993 | votes [['ashgrove', 2999.0], ['ashgrove', 3005.0], ['ashgrove', 3003.0], ['ashgrove', 2998.0], ['ashgrove', 3000.0]]
+
+=== run1 S3 wrong answers: got vs expected
+Q-17: got ['Ossbridge', 884.4572] | expected Harrowfield | 884
+Q-18: got ['Millbrook', 40013.3914] | expected yes | 40013
+
+=== run2 S3 rounds / tool calls per question
+Q-01:5r/7c, Q-02:4r/7c, Q-03:3r/5c, Q-04:4r/7c, Q-05:3r/5c, Q-06:3r/4c, Q-07:3r/5c, Q-08:3r/4c, Q-09:4r/7c, Q-10:3r/3c, Q-11:4r/10c, Q-12:3r/5c, Q-13:3r/9c, Q-14:3r/6c, Q-15:3r/5c, Q-16:3r/4c, Q-17:3r/6c, Q-18:3r/3c, Q-19:4r/7c, Q-20:4r/10c
+median rounds 3.0, max 5
+
+=== run2 S1 wrong answers: got vs expected
+Q-01: got ['Ossbridge', 4.424] | expected Ossbridge | 4.6
+Q-02: got ['Tarnvale', 0.7386] | expected Harrowfield | 1.69
+Q-03: got ['Lindenmoor', 0.06392] | expected Lindenmoor | 5.3
+Q-04: got ['Ashgrove', 6.0640625] | expected Millbrook | 2.59
+Q-05: got ['Stonecairn', 220.4] | expected Coldharbour | 14235
+Q-06: got ['yes', 1417.0] | expected yes | 14069
+Q-07: got ['Coldharbour', 20.92] | expected Coldharbour | 18.5
+Q-08: got ['Brightwater', 72.36225] | expected Brightwater | 72.46
+Q-09: got ['Brightwater', 10.12] | expected Millbrook | 0.6
+Q-11: got ['Ashgrove', 139.4] | expected Redfen | 56.1
+Q-12: got ['Harrowfield', 0.4239] | expected Tarnvale | 64.4
+Q-14: got ['Tarnvale', 0.00115] | expected Ashgrove | 4.9
+Q-15: got ['Kelmarsh', 16.5636] | expected Redfen | 17.61
+Q-17: got ['Harrowfield', 3327.11] | expected Harrowfield | 884
+Q-18: got ['yes', 39999.43] | expected yes | 40013
+Q-19: got ['Redfen', 0.07231] | expected Lindenmoor | 0.035
+Q-20: got ['Harrowfield', 74088.91] | expected Ashgrove | 2993
+
+=== run2 S2 wrong answers: got vs expected
+Q-05: got ['coldharbour', 14351.0] | expected Coldharbour | 14235 | votes [['coldharbour', 14351.0], ['coldharbour', 14312.0], ['coldharbour', 4351.0], ['coldharbour', 14219.0], ['coldharbour', 14283.0]]
+Q-12: got ['tarnvale', 64.0] | expected Tarnvale | 64.4 | votes [['tarnvale', 64.7], ['tarnvale', 64.3], ['tarnvale', 64.0], ['tarnvale', 64.1], ['tarnvale', 64.0]]
+Q-17: got ['harrowfield', 886.0] | expected Harrowfield | 884 | votes [['harrowfield', 885.0], ['harrowfield', 886.0], ['harrowfield', 886.0], ['harrowfield', 884.0], ['harrowfield', 1.0]]
+
+=== run2 S3 wrong answers: got vs expected
+Q-08: got ['Brightwater', 1.064] | expected Brightwater | 72.46
+
+--- run1 S3 Q-17 log (expected Harrowfield | 884, got ['Ossbridge', 884.4572])
+ round 1: prompt_tokens=538 completion_tokens=127
+   lookup({"district": "", "field": "water_tariff_2025"}) -> {"field": "water_tariff_2025", "value": 142.35, "unit": "tenge per cubic metre", "source": "NR-15", "note": "same in every district"}
+   lookup({"district": "Harrowfield", "field": "water_2025"}) -> {"district": "Harrowfield", "field": "water_2025", "value": 7146.0, "unit": "megalitres", "source": "NR-07"}
+   lookup({"district": "Harrowfield", "field": "population_2025"}) -> {"district": "Harrowfield", "field": "population_2025", "value": 90212.0, "unit": "residents", "source": "NR-07"}
+   lookup({"district": "Ossbridge", "field": "water_2025"}) -> {"district": "Ossbridge", "field": "water_2025", "value": 3862.0, "unit": "megalitres", "source": "NR-01"}
+   lookup({"district": "Ossbridge", "field": "population_2025"}) -> {"district": "Ossbridge", "field": "population_2025", "value": 52904.0, "unit": "residents", "source": "NR-01"}
+ round 2: prompt_tokens=894 completion_tokens=42
+   calculate({"expression":"(7146*1000*142.35/90212)-(3862*1000*142.35/52904)"}) -> {"expression": "(7146*1000*142.35/90212)-(3862*1000*142.35/52904)", "result": 884.4571621969}
+ round 3: prompt_tokens=987 completion_tokens=30
+   FINAL: Ossbridge households paid more: 884.4572 tenge per resident.
+
+ANSWER: Ossbridge | 884.4572
+
+--- run1 S3 Q-18 log (expected yes | 40013, got ['Millbrook', 40013.3914])
+ round 1: prompt_tokens=549 completion_tokens=61
+   lookup({"district": "Millbrook", "field": "population_2020"}) -> {"district": "Millbrook", "field": "population_2020", "value": 34590.0, "unit": "residents", "source": "NR-11"}
+   lookup({"district": "Millbrook", "field": "population_2025"}) -> {"district": "Millbrook", "field": "population_2025", "value": 37203.0, "unit": "residents", "source": "NR-11"}
+ round 2: prompt_tokens=705 completion_tokens=29
+   calculate({"expression":"37203*(1+(37203-34590)/34590)" }) -> {"expression": "37203*(1+(37203-34590)/34590)", "result": 40013.3914137034}
+ round 3: prompt_tokens=774 completion_tokens=33
+   FINAL: Yes. Millbrook’s projected 2030 population is 40013.3914 residents.
+
+ANSWER: Millbrook | 40013.3914
+
+--- run2 S3 Q-08 log (expected Brightwater | 72.46, got ['Brightwater', 1.064])
+ round 1: prompt_tokens=534 completion_tokens=81
+   lookup({"district": "Brightwater", "field": "population_2025"}) -> {"district": "Brightwater", "field": "population_2025", "value": 44675.0, "unit": "residents", "source": "NR-05"}
+   lookup({"district": "Millbrook", "field": "population_2025"}) -> {"district": "Millbrook", "field": "population_2025", "value": 37203.0, "unit": "residents", "source": "NR-11"}
+   lookup({"district": "", "field": "water_tariff_2025"}) -> {"field": "water_tariff_2025", "value": 142.35, "unit": "tenge per cubic metre", "source": "NR-15", "note": "same in every district"}
+ round 2: prompt_tokens=756 completion_tokens=29
+   calculate({"expression":"(44675-37203)*142.35/1000000"}) -> {"expression": "(44675-37203)*142.35/1000000", "result": 1.0636392}
+ round 3: prompt_tokens=823 completion_tokens=36
+   FINAL: Brightwater’s households paid more, by 1.064 million tenge, assuming equal household water consumption per resident.
+
+ANSWER: Brightwater | 1.064
+
+--- run1 S3 Q-09 log (expected Millbrook | 0.6, got ['Millbrook', 0.5557])
+ round 1: prompt_tokens=526 completion_tokens=103
+   lookup({"district": "Brightwater", "field": "population_2025"}) -> {"district": "Brightwater", "field": "population_2025", "value": 44675.0, "unit": "residents", "source": "NR-05"}
+   lookup({"district": "Brightwater", "field": "area_km2"}) -> {"district": "Brightwater", "field": "area_km2", "value": 921.4, "unit": "km2", "source": "NR-05 + NR-16", "note": "profile says 912.4, corrected by NR-16"}
+   lookup({"district": "Millbrook", "field": "population_2025"}) -> {"district": "Millbrook", "field": "population_2025", "value": 37203.0, "unit": "residents", "source": "NR-11"}
+   lookup({"district": "Millbrook", "field": "area_km2"}) -> {"district": "Millbrook", "field": "area_km2", "value": 758.6, "unit": "km2", "source": "NR-11"}
+ round 2: prompt_tokens=823 completion_tokens=57
+   calculate({"expression": "44675 / 921.4"}) -> {"expression": "44675 / 921.4", "result": 48.4859995659}
+   calculate({"expression": "37203 / 758.6"}) -> {"expression": "37203 / 758.6", "result": 49.0416556815}
+ round 3: prompt_tokens=940 completion_tokens=31
+   calculate({"expression":"37203 / 758.6 - 44675 / 921.4"}) -> {"expression": "37203 / 758.6 - 44675 / 921.4", "result": 0.5556561156}
+ round 4: prompt_tokens=1013 completion_tokens=46
+   FINAL: Millbrook has the higher 2025 population density by 0.5557 residents per square kilometre (49.0417 versus 48.4860).
+
+ANSWER: Millbrook | 0.5557
+
+--- run1 S3 Q-03 log (expected Lindenmoor | 5.3, got ['Lindenmoor', 5.34])
+ round 1: prompt_tokens=532 completion_tokens=107
+   lookup({"district": "Lindenmoor", "field": "water_2025"}) -> {"district": "Lindenmoor", "field": "water_2025", "value": 2151.4, "unit": "megalitres", "source": "NR-08", "note": "profile gives 2,151,400 cubic metres; conve...
+   lookup({"district": "Lindenmoor", "field": "population_2025"}) -> {"district": "Lindenmoor", "field": "population_2025", "value": 29051.0, "unit": "residents", "source": "NR-08"}
+   lookup({"district": "Kelmarsh", "field": "water_2025"}) -> {"district": "Kelmarsh", "field": "water_2025", "value": 1739.0, "unit": "megalitres", "source": "NR-04", "note": "archived profile NR-14 (2019) ignored"}
+   lookup({"district": "Kelmarsh", "field": "population_2025"}) -> {"district": "Kelmarsh", "field": "population_2025", "value": 24117.0, "unit": "residents", "source": "NR-04", "note": "archived profile NR-14 (2019) ignored"}
+ round 2: prompt_tokens=887 completion_tokens=69
+   calculate({"expression": "2151.4*1000000/(29051*365)"}) -> {"expression": "2151.4*1000000/(29051*365)", "result": 202.8930699577}
+   calculate({"expression": "1739*1000000/(24117*365)"}) -> {"expression": "1739*1000000/(24117*365)", "result": 197.5529112926}
+ round 3: prompt_tokens=1026 completion_tokens=28
+   calculate({"expression":"202.8930699577-197.5529112926"}) -> {"expression": "202.8930699577-197.5529112926", "result": 5.3401586651}
+ round 4: prompt_tokens=1093 completion_tokens=43
+   FINAL: Lindenmoor used more water: 5.340 litres per resident per day more than Kelmarsh (202.893 versus 197.553).
+
+ANSWER: Lindenmoor | 5.340
+
+--- run1 S2 Q-05 votes [['coldharbour', 14346.0], ['coldharbour', 14350.0], ['coldharbour', 13.0], ['coldharbour', 14247.0], ['coldharbour', 14332.0]] (expected Coldharbour | 14235)
+   sample 1 tail: Stonecairn: \(2,884.6\) million tenge ÷ \(14,926\) residents = \(193,168.2\) tenge per resident (NR-06).
+
+Coldharbour: \(2,366.9\) million tenge ÷ \(11,407\) residents = \(207,514.7\) tenge per resident (NR-12).
+
+Difference: \(207,514.7 - 193,168.2 = 14,346.5\) tenge per resident.
+
+ANSWER: Coldharbour | 14346.5
+
+--- run1 S2 Q-14 votes [['ashgrove', 4.6], ['ashgrove', 4.7], ['ashgrove', 0.0], ['ashgrove', 5.0], ['ashgrove', 0.0]] (expected Ashgrove | 4.9)
+   sample 1 tail: Tarnvale used 5,207 megalitres and had 71,388 residents (NR-03); Ashgrove used 4,390 megalitres and had 58,760 residents (NR-10). One megalitre is 1,000,000 litres.
+
+Tarnvale: \(5,207 \times 1,000,000 \div 71,388 \div 365 = 199.92\) litres per resident per day.  
+Ashgrove: \(4,390 \times 1,000,000 \div 58,760 \div 365 = 204.54\) litres per resident per day.  
+Difference: \(204.54 - 199.92 = 4.623\) litres per resident per day.
+
+ANSWER: Ashgrove | 4.623
+
+--- run1 S1 Q-09: ANSWER: Brightwater | 12.01 (expected Millbrook | 0.6)
+
+--- run1 S1 Q-17: ANSWER: Harrowfield | 4.247 (expected Harrowfield | 884)
+
+--- run1 S1 Q-01: ANSWER: Ossbridge | 5.134 (expected Ossbridge | 4.6)
+
+=== C1: normal (run1) vs vague description
+Q-01: calls 5 vs 7, rounds 3 vs 4, answer ['Ossbridge', 4.5701538723] vs ['Ossbridge', 4.5702], tokens 2223 vs 2892
+   vague args: ["{\"district\": \"Ossbridge\", \"field\": \"population_2025\"}", "{\"district\": \"Ossbridge\", \"field\": \"area_km2\"}", "{\"district\": \"Ossford\", \"field\": \"population_2025\"}", "{\"district\": \"Ossford\", \"field\": \"area_km2\"}", "{\"expression\": \"52904 / 1284.6\"}", "{\"expression\": \"30982 / 846.2\"}", "{\"expression\":\"52904 / 1284.6 - 30982 / 846.2\"}"]
+Q-03: calls 7 vs 5, rounds 4 vs 3, answer ['Lindenmoor', 5.34] vs ['Lindenmoor', 5.34], tokens 3538 vs 2118
+   vague args: ["{\"district\": \"Lindenmoor\", \"field\": \"water_2025\"}", "{\"district\": \"Lindenmoor\", \"field\": \"population_2025\"}", "{\"district\": \"Kelmarsh\", \"field\": \"water_2025\"}", "{\"district\": \"Kelmarsh\", \"field\": \"population_2025\"}", "{\"expression\":\"(2151.4*1000000/29051/365)-(1739.0*1000000/24117/365)\"}"]
+Q-08: calls 6 vs 7, rounds 4 vs 4, answer ['Brightwater', 72.45615] vs ['Brightwater', 72.45615], tokens 3204 vs 3030
+   vague args: ["{\"district\": \"Brightwater\", \"field\": \"population_2025\"}", "{\"district\": \"Brightwater\", \"field\": \"water_tariff_2025\"}", "{\"district\": \"Millbrook\", \"field\": \"population_2025\"}", "{\"district\": \"Millbrook\", \"field\": \"water_tariff_2025\"}", "{\"district\": \"Brightwater\", \"field\": \"water_2025\"}", "{\"district\": \"Millbrook\", \"field\": \"water_2025\"}", "{\"expre...
+Q-09: calls 7 vs 7, rounds 4 vs 4, answer ['Millbrook', 0.5557] vs ['Millbrook', 0.5557], tokens 3302 vs 2922
+   vague args: ["{\"district\": \"Brightwater\", \"field\": \"population_2025\"}", "{\"district\": \"Brightwater\", \"field\": \"area_km2\"}", "{\"district\": \"Millbrook\", \"field\": \"population_2025\"}", "{\"district\": \"Millbrook\", \"field\": \"area_km2\"}", "{\"expression\": \"44675 / 921.4\"}", "{\"expression\": \"37203 / 758.6\"}", "{\"expression\":\"37203 / 758.6 - 44675 / 921.4\"}"]
+Q-18: calls 3 vs 3, rounds 3 vs 3, answer ['Millbrook', 40013.3914] vs ['yes', 40013.3914], tokens 2028 vs 1743
+   vague args: ["{\"district\": \"Millbrook\", \"field\": \"population_2020\"}", "{\"district\": \"Millbrook\", \"field\": \"population_2025\"}", "{\"expression\":\"37203*(1+(37203-34590)/34590)\" }"]
